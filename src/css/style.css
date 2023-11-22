@@ -1,0 +1,547 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("@fortawesome/fontawesome-free/css/all.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+}
+
+body {
+  background: #02041d;
+  color: #FFF;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.header-button-learn {
+  border: none;
+  padding: 2px 10px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 12px 0px rgba(0, 31, 121, 0.08);
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+  font-family: "Inter", sans-serif;
+}
+
+.header-container {
+  margin: 1.5rem 5rem 0 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem 1.5rem;
+  border: 0.1px solid #1e2036;
+  border-radius: 1rem;
+  z-index: 2;
+  backdrop-filter: blur(3rem);
+  top: 1rem;
+  position: sticky;
+}
+.header-container .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-container .logo-container .logo {
+  width: 1rem;
+  margin-right: 0.6rem;
+}
+.header-container .logo-container h1 {
+  font-family: "Inter", sans-serif;
+  color: rgb(241, 245, 249);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.22px;
+}
+.header-container button {
+  border: 2px solid #9a9ba5;
+  border-radius: 0.4rem;
+  color: #FFF;
+  padding: 0.25rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 30px;
+  background: linear-gradient(to top, #313247, rgba(255, 255, 255, 0));
+}
+
+#footer {
+  margin: 0 auto 3rem auto;
+  width: 90%;
+}
+#footer .logo {
+  height: 2rem;
+  margin-right: 0.6rem;
+}
+#footer .footer__header__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#footer .footer__header__container .footer__header {
+  font-family: "Inter", sans-serif;
+  color: rgb(241, 245, 249);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.22px;
+}
+#footer .footer__description {
+  margin-top: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1rem;
+  letter-spacing: 0.12px;
+  font-size: 1rem;
+  color: #fff;
+}
+#footer .footer__container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+#footer .footer__line {
+  height: 1px;
+  background-color: #e1e1e1;
+  margin-top: 4rem;
+}
+#footer .footer__copyright {
+  margin-top: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.12px;
+  font-size: 0.7rem;
+  color: #e1e1e1;
+}
+
+#banner {
+  background-image: url(../assets/images/banner.png);
+  background-size: cover;
+  top: -5rem;
+  height: 45rem;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#banner:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(5rem);
+}
+#banner .banner__header {
+  margin-top: 15%;
+  width: 65vw;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 5rem;
+  letter-spacing: 0.24px;
+  font-size: 4rem;
+  color: #a0a6b6;
+}
+#banner .banner__header span {
+  background-image: linear-gradient(to right, #EAF7FF, #5BC2FF, #8E6CF9);
+  color: transparent;
+  background-clip: text;
+}
+#banner p {
+  width: 65vw;
+  margin-top: 2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1.5rem;
+  letter-spacing: 0.12px;
+  font-size: 1.22rem;
+  color: #fff;
+}
+#banner p botton {
+  border: 2px solid #9a9ba5;
+  border-radius: 0.4rem;
+  color: #FFF;
+  padding: 0.25rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 30px;
+  background: linear-gradient(to top, #313247, rgba(255, 255, 255, 0));
+}
+#banner .button-container {
+  margin: 2rem;
+}
+#banner .button-container .button-hire-left {
+  border: 2px solid #0F4EAD;
+  border-radius: 0.4rem;
+  color: #FFF;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 30px;
+  background: #0F4EAD;
+  margin-right: 1rem;
+}
+#banner .button-container .button-hire-right {
+  border: 2px solid #9a9ba5;
+  border-radius: 0.4rem;
+  color: #FFF;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 30px;
+  background: linear-gradient(to top, #313247, rgba(255, 255, 255, 0));
+}
+
+.download__icon {
+  margin-left: 0.5rem;
+  animation: moveUpDown 2s ease-in-out infinite;
+}
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+#experience {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+#experience .experience__subheader__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#experience .experience__subheader__container .line__in {
+  width: 20%;
+  height: 2px;
+  background: linear-gradient(to right, transparent 10%, #a0a6b6 200%);
+  align-self: center;
+  align-items: center;
+}
+#experience .experience__subheader__container .line__out {
+  width: 20%;
+  height: 2px;
+  background: linear-gradient(to left, transparent 10%, #a0a6b6 200%);
+}
+#experience .experience__subheader {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1.5rem;
+  letter-spacing: 0.12px;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0 1rem;
+}
+#experience .experience__header {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 5rem;
+  letter-spacing: 0.24px;
+  font-size: 3.8rem;
+  color: #a0a6b6;
+}
+#experience .experience__header span {
+  color: transparent;
+  background-image: linear-gradient(to right, #EAF7FF, #5BC2FF, #8E6CF9);
+  background-clip: text;
+}
+#experience .experience__description {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1.5rem;
+  letter-spacing: 0.12px;
+  font-size: 1.22rem;
+  color: #fff;
+  z-index: 1;
+}
+#experience .my__experiences {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+#experience .my__experiences img {
+  height: 5rem;
+}
+#experience .my__experiences .fiverr {
+  padding: 0.8rem 0;
+}
+
+#availability {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+#availability .availability__subheader__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#availability .availability__subheader__container .line__in {
+  width: 20%;
+  height: 2px;
+  background: linear-gradient(to right, transparent 10%, #a0a6b6 200%);
+  align-self: center;
+  align-items: center;
+}
+#availability .availability__subheader__container .line__out {
+  width: 20%;
+  height: 2px;
+  background: linear-gradient(to left, transparent 10%, #a0a6b6 200%);
+}
+#availability .availability__subheader {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1.5rem;
+  letter-spacing: 0.12px;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0 1rem;
+}
+#availability .availability__header {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 5rem;
+  letter-spacing: 0.24px;
+  font-size: 3.8rem;
+  color: #a0a6b6;
+}
+#availability .availability__header span {
+  color: transparent;
+  background-image: linear-gradient(to right, #C2E8FF, #9AF772);
+  background-clip: text;
+}
+#availability .availability__description {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1.5rem;
+  letter-spacing: 0.12px;
+  font-size: 1.22rem;
+  color: #fff;
+}
+#availability .my__availability {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: -10rem;
+  margin-left: -35rem;
+}
+#availability .my__availability img {
+  height: 50rem;
+}
+#availability .my__availability p {
+  width: 40rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 2rem;
+  letter-spacing: 0.12px;
+  font-size: 1.22rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+#availability .my__availability button {
+  border: 2px solid #0F4EAD;
+  border-radius: 0.4rem;
+  color: #FFF;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 30px;
+  background: #0F4EAD;
+  margin-right: 1rem;
+}
+
+#skillset {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+#skillset .skillset__subheader__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#skillset .skillset__subheader__container .line__in {
+  width: 20%;
+  height: 2px;
+  background: linear-gradient(to right, transparent 10%, #a0a6b6 200%);
+  align-self: center;
+  align-items: center;
+}
+#skillset .skillset__subheader__container .line__out {
+  width: 20%;
+  height: 2px;
+  background: linear-gradient(to left, transparent 10%, #a0a6b6 200%);
+}
+#skillset .skillset__subheader {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1.5rem;
+  letter-spacing: 0.12px;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0 1rem;
+}
+#skillset .skillset__header {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 5rem;
+  letter-spacing: 0.24px;
+  font-size: 3.8rem;
+  color: #a0a6b6;
+}
+#skillset .skillset__header span {
+  color: transparent;
+  background-image: linear-gradient(to right, #DD5F8C, #7376FF);
+  background-clip: text;
+}
+#skillset .skillset__description {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1.5rem;
+  letter-spacing: 0.12px;
+  font-size: 1.22rem;
+  color: #fff;
+}
+#skillset .my__skillset {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+  flex-direction: column;
+}
+#skillset .my__skillset img {
+  height: 5rem;
+  margin-left: 1rem;
+}
+#skillset .my__skillset__tabs {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+#skillset .my__skillset__tabs .tab__links {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1.5rem;
+  letter-spacing: 0.12px;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+#skillset .my__skillset__tabs .tab__links::after {
+  content: "";
+  bottom: -8px;
+  left: 0;
+  height: 3px;
+  transition: 0.5s;
+  background-image: linear-gradient(to right, #DD5F8C, #7376FF);
+  position: absolute;
+  width: 0;
+}
+#skillset .my__skillset__tabs .active__link::after {
+  width: 70%;
+}
+#skillset .tab__contents ul li {
+  list-style: none;
+  justify-self: left;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  width: 70%;
+  margin: 10px auto;
+  font-size: 0.8rem;
+}
+#skillset .tab__contents ul li span {
+  color: white;
+  font-size: 14px;
+}
+#skillset .tab__contents {
+  display: none;
+}
+#skillset .active__tab {
+  display: block;
+}
+
+#testimony {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+#testimony .testimony__subheader__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#testimony .testimony__subheader__container .line__in {
+  width: 20%;
+  height: 2px;
+  background: linear-gradient(to right, transparent 10%, #a0a6b6 200%);
+  align-self: center;
+  align-items: center;
+}
+#testimony .testimony__subheader__container .line__out {
+  width: 20%;
+  height: 2px;
+  background: linear-gradient(to left, transparent 10%, #a0a6b6 200%);
+}
+#testimony .testimony__subheader {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1.5rem;
+  letter-spacing: 0.12px;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0 1rem;
+}
+#testimony .testimony__header {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 5rem;
+  letter-spacing: 0.24px;
+  font-size: 3.8rem;
+  color: #a0a6b6;
+}
+#testimony .testimony__header span {
+  color: transparent;
+  background-image: linear-gradient(to right, #FFC5C5, #F25E70, #7179FF);
+  background-clip: text;
+}
+#testimony .testimony__description {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1.5rem;
+  letter-spacing: 0.12px;
+  font-size: 1.22rem;
+  color: #fff;
+  z-index: 1;
+}
+#testimony .my__testimony {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+#testimony .my__testimony img {
+  height: 5rem;
+}
+#testimony .my__testimony .fiverr {
+  padding: 0.8rem 0;
+}
+
+/*# sourceMappingURL=style.css.map */

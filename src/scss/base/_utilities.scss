@@ -1,0 +1,8 @@
+//commonly reused adjustments, like margin, text alignment, or other small changes that are frequently used across different sections of the site.
+
+@mixin body-box-framing {
+  padding: 1rem 10vw 0 10vw;
+  margin: 0 auto;
+}
+
+

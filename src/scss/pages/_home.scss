@@ -1,0 +1,643 @@
+//All syling for the Home page is done here
+@use '../abstracts' as *;
+@use '../base' as *;
+@use '../components' as *;
+
+#banner {
+  background-image: url(../assets/images/banner.png);
+  background-size: cover;
+  top: -5rem;
+  height: 45rem;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(5rem);
+  }
+
+  .banner__header {
+    margin-top: 15%;
+    width: 65vw;
+    font-family: $primary-font;
+    font-weight: 600;
+    line-height: 5rem;
+    letter-spacing: 0.24px;
+    font-size: 4rem;
+    color: #a0a6b6;
+
+    span {
+      background-image: linear-gradient(to right, #EAF7FF, #5BC2FF, #8E6CF9);
+      color: transparent;
+      background-clip: text;
+    }
+  }
+
+  p {
+    width: 65vw;
+    margin-top: 2rem;
+    font-family: $primary-font;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: 0.12px;
+    font-size: 1.22rem;
+    color: #fff;
+
+    botton {
+      border: 2px solid #9a9ba5;
+      border-radius: 0.4rem;
+      color: $global-white-color;
+      padding: 0.25rem 2rem;
+      font-size: 1.5rem;
+      font-weight: $secondary-weight-600;
+      line-height: 30px;
+      background: linear-gradient(to top, #313247, rgba(255, 255, 255, 0));
+    }
+  }
+
+  .button-container {
+    margin: 2rem;
+
+    .button-hire-left {
+      border: 2px solid #0F4EAD;
+      border-radius: 0.4rem;
+      color: $global-white-color;
+      padding: 0.5rem 1.2rem;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 30px;
+      background: #0F4EAD;
+      margin-right: 1rem;
+
+    }
+
+    .button-hire-right {
+      border: 2px solid #9a9ba5;
+      border-radius: 0.4rem;
+      color: $global-white-color;
+      padding: 0.5rem 1.2rem;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 30px;
+      background: linear-gradient(to top, #313247, rgba(255, 255, 255, 0));
+
+    }
+  }
+}
+
+.download__icon {
+  // padding: 2rem;
+  margin-left: 0.5rem;
+  animation: moveUpDown 2s ease-in-out infinite;
+
+  @keyframes moveUpDown {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-5px);
+    }
+
+  }
+}
+
+
+
+// .firefly {
+//   position: absolute;
+//   width: 3px;
+//   height: 3px;
+//   background: radial-gradient(circle, #3498db, transparent);
+//   border-radius: 50%;
+//   pointer-events: none;
+//   animation: drift 10s linear infinite, flash 2s infinite;
+//   opacity: 0.5;
+// }
+
+// .bubble {
+//   position: absolute;
+//   width: 1px;
+//   height: 1px;
+//   background: rgba(255, 255, 255, 0.7);
+//   border-radius: 50%;
+//   pointer-events: none;
+//   animation: float 6s linear infinite;
+//   opacity: 0.5;
+// }
+
+// @keyframes drift {
+//   0% {
+//     transform: translate(0, 0);
+//   }
+//   100% {
+//     transform: translate(calc(100vw + 10px), calc(100vh + 10px));
+//   }
+// }
+
+// @keyframes flash {
+//   0%, 30%, 100% {
+//     opacity: 0;
+//   }
+//   5% {
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes float {
+//   0%, 100% {
+//     transform: translateY(0);
+//   }
+//   50% {
+//     transform: translateY(-20px);
+//   }
+// }
+
+
+// /* Add these styles in your existing CSS file or create a new one */
+// #banner {
+//   position: relative;
+// }
+
+// .bubble {
+//   position: absolute;
+//   width: 1px;  /* Adjust the size of the bubbles */
+//   height: 1px; /* Adjust the size of the bubbles */
+//   border-radius: 50%;
+//   animation: moveBubble 20s infinite linear;
+//   opacity: 0.5;
+// }
+
+// /* Add a keyframe animation for bubble movement */
+// @keyframes moveBubble {
+//   0%, 100% {
+//     transform: translateY(0);
+//   }
+//   50% {
+//     transform: translateY(2rem); /* Adjust the vertical movement distance */
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+//experience
+
+#experience {
+  text-align: center;
+  margin-bottom: 8rem;
+
+  .experience__subheader__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .line__in {
+      width: 20%;
+      height: 2px;
+      background: linear-gradient(to right, transparent 10%, #a0a6b6 200%);
+      align-self: center;
+      align-items: center;
+    }
+
+    .line__out {
+      width: 20%;
+      height: 2px;
+      background: linear-gradient(to left, transparent 10%, #a0a6b6 200%);
+    }
+  }
+
+  .experience__subheader {
+    font-family: $primary-font;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: 0.12px;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0 1rem;
+
+  }
+
+  .experience__header {
+    font-family: $primary-font;
+    font-weight: 600;
+    line-height: 5rem;
+    letter-spacing: 0.24px;
+    font-size: 3.8rem;
+    color: #a0a6b6;
+
+    span {
+      color: transparent;
+      background-image: linear-gradient(to right, #EAF7FF, #5BC2FF, #8E6CF9);
+      background-clip: text;
+    }
+  }
+
+  .experience__description {
+    font-family: $primary-font;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: 0.12px;
+    font-size: 1.22rem;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .my__experiences {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+
+    img {
+      height: 5rem;
+    }
+
+    .fiverr {
+      padding: 0.8rem 0;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//availability
+
+#availability {
+  text-align: center;
+  margin-bottom: 8rem;
+
+  .availability__subheader__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .line__in {
+      width: 20%;
+      height: 2px;
+      background: linear-gradient(to right, transparent 10%, #a0a6b6 200%);
+      align-self: center;
+      align-items: center;
+    }
+
+    .line__out {
+      width: 20%;
+      height: 2px;
+      background: linear-gradient(to left, transparent 10%, #a0a6b6 200%);
+    }
+  }
+
+  .availability__subheader {
+    font-family: $primary-font;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: 0.12px;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0 1rem;
+
+  }
+
+  .availability__header {
+    font-family: $primary-font;
+    font-weight: 600;
+    line-height: 5rem;
+    letter-spacing: 0.24px;
+    font-size: 3.8rem;
+    color: #a0a6b6;
+
+    span {
+      color: transparent;
+      background-image: linear-gradient(to right, #C2E8FF, #9AF772);
+      background-clip: text;
+    }
+  }
+
+  .availability__description {
+    font-family: $primary-font;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: 0.12px;
+    font-size: 1.22rem;
+    color: #fff;
+  }
+
+  .my__availability {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: -10rem;
+    margin-left: -35rem;
+
+    img {
+      height: 50rem;
+
+    }
+
+    p {
+      width: 40rem;
+      font-family: $primary-font;
+      font-weight: 300;
+      line-height: 2rem;
+      letter-spacing: 0.12px;
+      font-size: 1.22rem;
+      color: #fff;
+      margin-bottom: 2rem;
+    }
+
+    button {
+      border: 2px solid #0F4EAD;
+      border-radius: 0.4rem;
+      color: $global-white-color;
+      padding: 0.5rem 1.2rem;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 30px;
+      background: #0F4EAD;
+      margin-right: 1rem;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// skillset
+
+#skillset {
+  text-align: center;
+  margin-bottom: 8rem;
+
+  .skillset__subheader__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .line__in {
+      width: 20%;
+      height: 2px;
+      background: linear-gradient(to right, transparent 10%, #a0a6b6 200%);
+      align-self: center;
+      align-items: center;
+    }
+
+    .line__out {
+      width: 20%;
+      height: 2px;
+      background: linear-gradient(to left, transparent 10%, #a0a6b6 200%);
+    }
+  }
+
+  .skillset__subheader {
+    font-family: $primary-font;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: 0.12px;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0 1rem;
+
+  }
+
+  .skillset__header {
+    font-family: $primary-font;
+    font-weight: 600;
+    line-height: 5rem;
+    letter-spacing: 0.24px;
+    font-size: 3.8rem;
+    color: #a0a6b6;
+
+    span {
+      color: transparent;
+      background-image: linear-gradient(to right, #DD5F8C, #7376FF);
+      background-clip: text;
+    }
+  }
+
+  .skillset__description {
+    font-family: $primary-font;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: 0.12px;
+    font-size: 1.22rem;
+    color: #fff;
+  }
+
+  .my__skillset {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+    flex-direction: column;
+
+    img {
+      height: 5rem;
+      margin-left: 1rem;
+    }
+
+  }
+
+  .my__skillset__tabs {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    gap: 3rem;
+    margin-top: 3rem;
+
+    .tab__links {
+      font-family: $primary-font;
+      font-weight: 300;
+      line-height: 1.5rem;
+      letter-spacing: 0.12px;
+      font-size: 1rem;
+      color: #fff;
+      cursor: pointer;
+      position: relative;
+
+      &::after {
+        content: "";
+        bottom: -8px;
+        left: 0;
+        height: 3px;
+        transition: 0.5s;
+        background-image: linear-gradient(to right, #DD5F8C, #7376FF);
+        position: absolute;
+        width: 0;
+
+      }
+    }
+
+    .active__link::after {
+      width: 70%;
+    }
+
+  }
+
+  .tab__contents ul li {
+    list-style: none;
+    justify-self: left;
+    text-align: left;
+    font-family: $primary-font;
+    width: 70%;
+    margin: 10px auto;
+    font-size: 0.8rem;
+
+    span {
+      color: white;
+      font-size: 14px;
+    }
+
+  }
+
+  .tab__contents {
+    display: none;
+    
+  }
+  .active__tab{
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//testimony
+
+#testimony {
+  text-align: center;
+  margin-bottom: 8rem;
+
+  .testimony__subheader__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .line__in {
+      width: 20%;
+      height: 2px;
+      background: linear-gradient(to right, transparent 10%, #a0a6b6 200%);
+      align-self: center;
+      align-items: center;
+    }
+
+    .line__out {
+      width: 20%;
+      height: 2px;
+      background: linear-gradient(to left, transparent 10%, #a0a6b6 200%);
+    }
+  }
+
+  .testimony__subheader {
+    font-family: $primary-font;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: 0.12px;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0 1rem;
+
+  }
+
+  .testimony__header {
+    font-family: $primary-font;
+    font-weight: 600;
+    line-height: 5rem;
+    letter-spacing: 0.24px;
+    font-size: 3.8rem;
+    color: #a0a6b6;
+
+    span {
+      color: transparent;
+      background-image: linear-gradient(to right, #FFC5C5, #F25E70, #7179FF);
+      background-clip: text;
+    }
+  }
+
+  .testimony__description {
+    font-family: $primary-font;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: 0.12px;
+    font-size: 1.22rem;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .my__testimony {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+
+    img {
+      height: 5rem;
+    }
+
+    .fiverr {
+      padding: 0.8rem 0;
+    }
+  }
+}
+
+
+
+
+

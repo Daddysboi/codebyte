@@ -1,0 +1,20 @@
+//CTA button
+
+@use '../abstracts' as *;
+@use '../base/' as *;
+
+.header-button {
+  &-learn {
+    border: none;
+    padding: 2px 10px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 12px 0px rgba(0, 31, 121, 0.08);
+    color: $global-white-color;
+    font-size: 15px;
+    font-weight: $primary-weight-500;
+    line-height: 30px;
+    font-family: $primary-font;
+  }
+}
+
+
