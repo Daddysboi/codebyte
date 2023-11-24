@@ -33,7 +33,7 @@ body::-webkit-scrollbar {
 }
 
 .header-container {
-  margin: 1.5rem 5rem 0 5rem;
+  margin: 1.5rem 8rem 0 8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,53 +60,19 @@ body::-webkit-scrollbar {
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 0.22px;
+  cursor: pointer;
 }
-.header-container button {
-  border: 2px solid #9a9ba5;
-  border-radius: 0.4rem;
+.header-container .github__icon {
   color: #FFF;
-  padding: 0.25rem 2rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
   line-height: 30px;
-  background: linear-gradient(to top, #313247, rgba(255, 255, 255, 0));
+  padding-right: 1rem;
 }
 
 #footer {
   margin: 0 auto 3rem auto;
   width: 90%;
-}
-#footer .logo {
-  height: 2rem;
-  margin-right: 0.6rem;
-}
-#footer .footer__header__container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-#footer .footer__header__container .footer__header {
-  font-family: "Inter", sans-serif;
-  color: rgb(241, 245, 249);
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 0.22px;
-}
-#footer .footer__description {
-  margin-top: 1rem;
-  font-family: "Inter", sans-serif;
-  font-weight: 300;
-  line-height: 1rem;
-  letter-spacing: 0.12px;
-  font-size: 1rem;
-  color: #fff;
-}
-#footer .footer__container {
-  margin-top: 1.5rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1rem;
 }
 #footer .footer__line {
   height: 1px;
@@ -132,6 +98,7 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Inter", sans-serif;
 }
 #banner:before {
   content: "";
@@ -142,10 +109,24 @@ body::-webkit-scrollbar {
   height: 100%;
   filter: blur(5rem);
 }
+#banner .banner__welcome__btn {
+  margin-top: 12%;
+  border: 1px solid #9a9ba5;
+  border-radius: 0.4rem;
+  color: #FFF;
+  padding: 0.25rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 30px;
+  background: linear-gradient(to bottom, #202D5D, rgba(255, 255, 255, 0));
+}
+#banner .banner__welcome__btn div {
+  display: inline-block;
+  padding-right: 0.5rem;
+}
 #banner .banner__header {
-  margin-top: 15%;
+  margin-top: 1rem;
   width: 65vw;
-  font-family: "Inter", sans-serif;
   font-weight: 600;
   line-height: 5rem;
   letter-spacing: 0.24px;
@@ -157,17 +138,16 @@ body::-webkit-scrollbar {
   color: transparent;
   background-clip: text;
 }
-#banner p {
+#banner .banner__description {
   width: 65vw;
   margin-top: 2rem;
-  font-family: "Inter", sans-serif;
   font-weight: 300;
   line-height: 1.5rem;
   letter-spacing: 0.12px;
   font-size: 1.22rem;
   color: #fff;
 }
-#banner p botton {
+#banner .banner__description botton {
   border: 2px solid #9a9ba5;
   border-radius: 0.4rem;
   color: #FFF;
@@ -200,6 +180,32 @@ body::-webkit-scrollbar {
   font-weight: 500;
   line-height: 30px;
   background: linear-gradient(to top, #313247, rgba(255, 255, 255, 0));
+}
+#banner .banner__rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 0.4rem;
+}
+#banner .banner__rating .review__star {
+  font-size: 2rem;
+}
+#banner .banner__rating .review__tip {
+  text-align: left;
+  padding: 0;
+}
+#banner .banner__rating .review__tip .stars {
+  font-size: 0.7rem;
+}
+#banner .banner__rating .review__tip .review__desc {
+  padding: 0;
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+#banner .banner__rating .review__tip span {
+  color: green;
 }
 
 .download__icon {
@@ -459,7 +465,7 @@ body::-webkit-scrollbar {
   width: 70%;
 }
 #skillset .tab__contents ul li {
-  list-style: none;
+  list-style: inside;
   justify-self: left;
   text-align: left;
   font-family: "Inter", sans-serif;
@@ -479,27 +485,32 @@ body::-webkit-scrollbar {
 }
 
 #testimony {
-  text-align: center;
+  font-family: "Inter", sans-serif;
+  margin: 5rem auto;
   margin-bottom: 8rem;
 }
-#testimony .testimony__subheader__container {
+#testimony .testimony__header_section {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+#testimony .testimony__header_section .testimony__subheader__container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#testimony .testimony__subheader__container .line__in {
+#testimony .testimony__header_section .testimony__subheader__container .line__in {
   width: 20%;
   height: 2px;
   background: linear-gradient(to right, transparent 10%, #a0a6b6 200%);
   align-self: center;
   align-items: center;
 }
-#testimony .testimony__subheader__container .line__out {
+#testimony .testimony__header_section .testimony__subheader__container .line__out {
   width: 20%;
   height: 2px;
   background: linear-gradient(to left, transparent 10%, #a0a6b6 200%);
 }
-#testimony .testimony__subheader {
+#testimony .testimony__header_section .testimony__subheader {
   font-family: "Inter", sans-serif;
   font-weight: 300;
   line-height: 1.5rem;
@@ -508,7 +519,7 @@ body::-webkit-scrollbar {
   color: #fff;
   padding: 0 1rem;
 }
-#testimony .testimony__header {
+#testimony .testimony__header_section .testimony__header {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   line-height: 5rem;
@@ -516,12 +527,12 @@ body::-webkit-scrollbar {
   font-size: 3.8rem;
   color: #a0a6b6;
 }
-#testimony .testimony__header span {
+#testimony .testimony__header_section .testimony__header span {
   color: transparent;
-  background-image: linear-gradient(to right, #FFC5C5, #F25E70, #7179FF);
+  background-image: linear-gradient(to right, #EAF7FF, #5BC2FF, #8E6CF9);
   background-clip: text;
 }
-#testimony .testimony__description {
+#testimony .testimony__header_section .testimony__description {
   font-family: "Inter", sans-serif;
   font-weight: 300;
   line-height: 1.5rem;
@@ -530,18 +541,165 @@ body::-webkit-scrollbar {
   color: #fff;
   z-index: 1;
 }
-#testimony .my__testimony {
+#testimony .testimonial__carousel__container .testimonial__card {
+  border: 1px solid #1e2036;
+  width: 50rem;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+#testimony .testimonial__carousel__container .testimonial__card .testimonial__testimony,
+#testimony .testimonial__carousel__container .testimonial__card .testimonial__location {
+  padding-top: 1rem;
+  font-weight: 300;
+}
+#testimony .testimonial__carousel__container .testimonial__card .testimonial__testifier {
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+#testimony .testimonial__carousel__container .slick-slide > div {
+  margin: 0 1rem;
+}
+
+#contact__form {
   display: flex;
+  justify-content: space-around;
+  align-items: left;
+}
+
+#contact__form,
+.form__container {
+  text-align: left;
+  margin-bottom: 4rem;
+  font-family: "Inter", sans-serif;
+}
+#contact__form .form__subheader__container,
+.form__container .form__subheader__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#contact__form .form__subheader__container .line__in,
+.form__container .form__subheader__container .line__in {
+  width: 20%;
+  height: 2px;
+  background: linear-gradient(to right, transparent 10%, #a0a6b6 200%);
+  align-self: center;
+  align-items: center;
+}
+#contact__form .form__subheader__container .line__out,
+.form__container .form__subheader__container .line__out {
+  width: 20%;
+  height: 2px;
+  background: linear-gradient(to left, transparent 10%, #a0a6b6 200%);
+}
+#contact__form .form__subheader,
+.form__container .form__subheader {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1.5rem;
+  letter-spacing: 0.12px;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0 1rem;
+}
+#contact__form .form__header,
+.form__container .form__header {
+  font-weight: 600;
+  line-height: 5rem;
+  letter-spacing: 0.24px;
+  font-size: 3.8rem;
+  color: #a0a6b6;
+}
+#contact__form .form__header span,
+.form__container .form__header span {
+  color: transparent;
+  background-image: linear-gradient(to right, #C2E8FF, #9AF772);
+  background-clip: text;
+}
+#contact__form .form__description,
+.form__container .form__description {
+  font-weight: 300;
+  line-height: 1.5rem;
+  letter-spacing: 0.12px;
+  font-size: 1rem;
+  color: #fff;
+  z-index: 1;
+}
+#contact__form .form__action__container,
+.form__container .form__action__container {
+  display: flex;
+  align-items: center;
   justify-content: center;
+}
+#contact__form .form__action__container form,
+.form__container .form__action__container form {
+  width: 40rem;
+}
+#contact__form .form__action__container form input,
+#contact__form .form__action__container form textarea,
+.form__container .form__action__container form input,
+.form__container .form__action__container form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #1e2036;
+  border-radius: 0.3rem;
+}
+#contact__form .form__action__container form .submit__btn,
+.form__container .form__action__container form .submit__btn {
+  padding: 0.7rem 3rem;
+  border-radius: 0.5rem;
+  border: 2px solid #0F4EAD;
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 30px;
+  background: #0F4EAD;
+  margin-bottom: 3rem;
+}
+
+.contact__links {
+  width: 90%;
+  margin-top: 35%;
+}
+.contact__links .logo {
+  height: 2rem;
+  margin-right: 0.6rem;
+}
+.contact__links .contact__header__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contact__links .contact__header__container .contact__header {
+  font-family: "Inter", sans-serif;
+  color: rgb(241, 245, 249);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.22px;
+}
+.contact__links .contact__description {
+  margin-top: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1rem;
+  letter-spacing: 0.12px;
+  font-size: 1rem;
+  color: #fff;
+}
+.contact__links .contact__container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
   gap: 1rem;
-  margin-top: 3rem;
+  color: white;
 }
-#testimony .my__testimony img {
-  height: 5rem;
-}
-#testimony .my__testimony .fiverr {
-  padding: 0.8rem 0;
+.contact__links .contact__container a {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

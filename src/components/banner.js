@@ -1,66 +1,57 @@
-import React, { useEffect } from "react";
-import "../css/style.css";
+import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
-
-// import banner from "../assets/images/banner.png";
-
-const SophisticatedBanner = () => {
-  useEffect(() => {
-    const banner = document.getElementById("banner");
-
-    function createBubble(color) {
-      const bubble = document.createElement("div");
-      bubble.classList.add("bubble");
-      bubble.style.background = color;
-
-      const randomX = Math.random() * window.innerWidth * 0.3; // Adjust the range
-      const randomY = Math.random() * window.innerHeight * 0.3; // Adjust the range
-
-      bubble.style.left = `${randomX}px`;
-      bubble.style.top = `${randomY}px`;
-
-      banner.appendChild(bubble);
-    }
-
-    // Create sun reflection
-    const sunReflection = document.createElement("div");
-    sunReflection.classList.add("sun-reflection");
-    banner.appendChild(sunReflection);
-
-    // Create bubbles within the sun reflection
-    for (let i = 0; i < 30; i++) {
-      createBubble("white"); // White bubbles
-      createBubble("blue"); // Blue bubbles
-    }
-  }, []);
-
-  return null; // No need to render anything
-};
+import {
+  faD,
+  faDownload,
+  faExplosion,
+} from "@fortawesome/free-solid-svg-icons";
+import Temitope_Yusuf_Cv from "../assets/files/Temitope Yusuf.pdf";
 
 const Banner = () => {
   return (
     <div id="banner">
-      {/* <div class="firefly"></div>
-      <div class="bubble"></div> */}
       <div>
+        <button className="banner__welcome__btn">
+          <div>
+            <FontAwesomeIcon className="icon" icon={faExplosion} />
+          </div>
+          Update: Working on web5 Apps
+        </button>
         <h1 className="banner__header">
-          Hire and get<span> a top</span> <br />
+          Get a<span> world class</span> <br />
           developer on your team
         </h1>
-        <p>
+        <p className="banner__description">
           ...Innovate, illuminate, inspire, the future starts with a good dev
         </p>
         <div className="button-container">
-          <button className="button-hire-left">Hire Now</button>
-          <button className="button-hire-right">
-            MY CV
-            <FontAwesomeIcon className="download__icon" icon={faDownload} />
-          </button>
+          <Link
+            to="contact__form"
+            duration={500}
+            spy={true}
+            smooth={true}
+            offset={-100}
+          >
+            <button className="button-hire-left">Hire Now</button>
+          </Link>
+          <a href={Temitope_Yusuf_Cv} download="Temitope_Yusuf_Cv">
+            <button className="button-hire-right">
+              MY CV
+              <FontAwesomeIcon className="download__icon" icon={faDownload} />
+            </button>
+          </a>
+        </div>
+        <div className="banner__rating">
+          <p className="review__star">4.99</p>
+          <div className="review__tip">
+            <p className="stars">&#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            <p className="review__desc">
+              reviews on<span> Fiver</span>
+            </p>
+          </div>
         </div>
       </div>
-
-      {/* <SophisticatedBanner /> */}
     </div>
   );
 };

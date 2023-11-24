@@ -1,5 +1,4 @@
 import React from "react";
-import "../css/style.css";
 import world from "../assets/images/world.png";
 
 const Availability = () => {

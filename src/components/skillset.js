@@ -1,11 +1,15 @@
 import React, { useState } from "react";
-import "../css/style.css";
 import css from "../assets/images/css.png";
 import react from "../assets/images/react.png";
 import javascript from "../assets/images/javascript.png";
 import tailwind from "../assets/images/tailwind.png";
 import typescript from "../assets/images/typescript.png";
 import sass from "../assets/images/sass.png";
+import git from "../assets/images/git.png";
+import wordpress from "../assets/images/wordpress.png";
+import sql from "../assets/images/sql.png";
+import figma from "../assets/images/figma.png";
+import html from "../assets/images/html.png";
 
 const Skillset = () => {
   const [activeTab, setActiveTab] = useState("web__dev");
@@ -30,12 +34,18 @@ const Skillset = () => {
       </p>
       <div className="my__skillset">
         <div>
+          <img src={html} alt="html" />
           <img src={css} alt="css" />
           <img src={javascript} alt="js" />
           <img className="fiverr" src={react} alt="react" />
           <img src={tailwind} alt="tailwind" />
           <img src={typescript} alt="typescript" />
           <img src={sass} alt="sass" />
+          <img src={figma} alt="figma" />
+          <img src={wordpress} alt="wordpress" />
+          <img src={sql} alt="sql" />
+          <img src={git} alt="git" />
+
           {/* <img src={worspress} alt="" /> */}
         </div>
         <div className="my__skillset__tabs">
@@ -78,19 +88,31 @@ const Skillset = () => {
           }`}
         >
           <ul>
+            <li>Languages: HTML, CSS3, JavaScript (ES6+)</li>
+            <li>CMS: Wordpress</li>
             <li>
-              Ability to design fully responsive and interactive HTML/Wordpress
-              websites of any magnitude
+              Frameworks/Libraries: React.js,Styles Components, SASS, Bootstrap,
+              Tailwind
+            </li>
+            <li>Next.js for Server-Side Rendering (SSR) </li>
+            <li>Version Control: Git/GitHub</li>
+            <li>
+              Responsive Design: Cross-browser compatibility, Mobile-first
+              approach
             </li>
             <li>
-              Ability to use maintainable CSS styling like Sass, Tailwind,
-              Bootstrap
+              Web Performance Optimization: Efficient code splitting, Lazy
+              loading of assets, Minification and compression techniques
             </li>
+            <li>API Integration: RESTful APIs, GraphQL</li>
+            <li>Package Managers: npm</li>
+            <li>Build Tools: Webpack</li>
+            <li>Testing: Unit testing with Jest, Integration testing</li>
+            <li>Code Quality: ESLint, Prettier</li>
             <li>
-              Ability to add interactivity using JavaScript, Reactjs, Typescript
+              Other Skills: Figma and UI/UX principles, Web accessibility
+              (WCAG), Progressive Web App (PWA) development
             </li>
-            <li>Debuging and website testing</li>
-            <li>Frontend speacialist</li>
           </ul>
         </div>
         <div
@@ -99,10 +121,17 @@ const Skillset = () => {
           }`}
         >
           <ul>
-            <li>Power BI</li>
-            <li>R</li>
-            <li>Excel/Google spreadsheets</li>
-            <li>SQL</li>
+            <li>Excel/MS Office/Google Analytics</li>
+            <li>Power BI: Expertise in data modeling, & publishing.</li>
+            <li>HubSpot: lead management, & sales tracking,</li>
+            <li>
+              Data Analytics: Strong data visualization, pattern recognition,
+              and storytelling
+            </li>
+            <li>SQL: querying, and managing relational databases</li>
+            <li>
+              R: Proficiency in statistical computing, analysis, & modeling.
+            </li>
           </ul>
         </div>
         <div
@@ -111,10 +140,13 @@ const Skillset = () => {
           }`}
         >
           <ul>
-            <li>Excel</li>
-            <li>Power BI</li>
-            <li>SQL</li>
-            <li>R</li>
+            <li>Excel/MS Office/Google Analytics</li>
+            <li>Power BI: Expertise in data modeling, & publishing</li>
+            <li>Strong data visualization and pattern recognition</li>
+            <li>SQL: querying, and managing relational databases</li>
+            <li>
+              R: Proficiency in statistical computing, analysis, & modeling.
+            </li>
           </ul>
         </div>
         <div
@@ -123,11 +155,15 @@ const Skillset = () => {
           }`}
         >
           <ul>
-            <li>Linux</li>
-            <li>Python</li>
-            <li>SQL</li>
+            <li>Understanding of network protocols and firewall </li>
+            <li>Knowledge of conducting security assessments </li>
+            <li>
+              Incident Response: Ability in handling security incidents,
+              investigate breaches, and implementing measures to minimize
+              impact.
+            </li>
             <li>Google Chronicle</li>
-            <li>Play Book</li>
+            <li>Knowledge of secure coding practices</li>
             <li>Packet Snippet</li>
           </ul>
         </div>

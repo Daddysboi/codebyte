@@ -1,5 +1,4 @@
 import React from "react";
-import "../css/style.css";
 import fiverr from "../assets/images/fiverr.png";
 import upwork from "../assets/images/upwork.png";
 import toptal from "../assets/images/toptal.png";

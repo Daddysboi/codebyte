@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: $primary-font;
 
   &:before {
     content: '';
@@ -23,11 +24,24 @@
     height: 100%;
     filter: blur(5rem);
   }
-
+.banner__welcome__btn{
+  margin-top: 12%;
+  border: 1px solid #9a9ba5;
+  border-radius: 0.4rem;
+  color: $global-white-color;
+  padding: 0.25rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 30px;
+  background: linear-gradient(to bottom, #202D5D, rgba(255, 255, 255, 0));
+  div{
+    display: inline-block;
+    padding-right:0.5rem;
+  }
+}
   .banner__header {
-    margin-top: 15%;
+  margin-top: 1rem;
     width: 65vw;
-    font-family: $primary-font;
     font-weight: 600;
     line-height: 5rem;
     letter-spacing: 0.24px;
@@ -41,10 +55,9 @@
     }
   }
 
-  p {
+  .banner__description {
     width: 65vw;
     margin-top: 2rem;
-    font-family: $primary-font;
     font-weight: 300;
     line-height: 1.5rem;
     letter-spacing: 0.12px;
@@ -91,10 +104,35 @@
 
     }
   }
+  .banner__rating{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 0.4rem;
+  .review__star{
+    font-size: 2rem;
+  }
+  .review__tip{
+    text-align: left;
+    padding: 0;
+    .stars{
+      font-size: 0.7rem;
+    }
+    .review__desc{
+      padding: 0;
+      margin: 0;
+      font-size: 0.7rem;
+      font-weight: 300;
+    }
+    span{
+      color: green;
+    }
+  }
+  }
 }
 
 .download__icon {
-  // padding: 2rem;
   margin-left: 0.5rem;
   animation: moveUpDown 2s ease-in-out infinite;
 
@@ -111,88 +149,6 @@
 
   }
 }
-
-
-
-// .firefly {
-//   position: absolute;
-//   width: 3px;
-//   height: 3px;
-//   background: radial-gradient(circle, #3498db, transparent);
-//   border-radius: 50%;
-//   pointer-events: none;
-//   animation: drift 10s linear infinite, flash 2s infinite;
-//   opacity: 0.5;
-// }
-
-// .bubble {
-//   position: absolute;
-//   width: 1px;
-//   height: 1px;
-//   background: rgba(255, 255, 255, 0.7);
-//   border-radius: 50%;
-//   pointer-events: none;
-//   animation: float 6s linear infinite;
-//   opacity: 0.5;
-// }
-
-// @keyframes drift {
-//   0% {
-//     transform: translate(0, 0);
-//   }
-//   100% {
-//     transform: translate(calc(100vw + 10px), calc(100vh + 10px));
-//   }
-// }
-
-// @keyframes flash {
-//   0%, 30%, 100% {
-//     opacity: 0;
-//   }
-//   5% {
-//     opacity: 1;
-//   }
-// }
-
-// @keyframes float {
-//   0%, 100% {
-//     transform: translateY(0);
-//   }
-//   50% {
-//     transform: translateY(-20px);
-//   }
-// }
-
-
-// /* Add these styles in your existing CSS file or create a new one */
-// #banner {
-//   position: relative;
-// }
-
-// .bubble {
-//   position: absolute;
-//   width: 1px;  /* Adjust the size of the bubbles */
-//   height: 1px; /* Adjust the size of the bubbles */
-//   border-radius: 50%;
-//   animation: moveBubble 20s infinite linear;
-//   opacity: 0.5;
-// }
-
-// /* Add a keyframe animation for bubble movement */
-// @keyframes moveBubble {
-//   0%, 100% {
-//     transform: translateY(0);
-//   }
-//   50% {
-//     transform: translateY(2rem); /* Adjust the vertical movement distance */
-//   }
-// }
-
-
-
-
-
-
 
 
 
@@ -520,7 +476,7 @@
   }
 
   .tab__contents ul li {
-    list-style: none;
+    list-style: inside;
     justify-self: left;
     text-align: left;
     font-family: $primary-font;
@@ -537,9 +493,10 @@
 
   .tab__contents {
     display: none;
-    
+
   }
-  .active__tab{
+
+  .active__tab {
     display: block;
   }
 }
@@ -558,15 +515,137 @@
 
 
 
-//testimony
+// testimony
 
 #testimony {
-  text-align: center;
+  font-family: $primary-font;
+  margin: 5rem auto;
   margin-bottom: 8rem;
+  .testimony__header_section {
+    text-align: center;
+    margin-bottom: 5rem;
+  
+    .testimony__subheader__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      .line__in {
+        width: 20%;
+        height: 2px;
+        background: linear-gradient(to right, transparent 10%, #a0a6b6 200%);
+        align-self: center;
+        align-items: center;
+      }
+  
+      .line__out {
+        width: 20%;
+        height: 2px;
+        background: linear-gradient(to left, transparent 10%, #a0a6b6 200%);
+      }
+    }
+  
+    .testimony__subheader {
+      font-family: $primary-font;
+      font-weight: 300;
+      line-height: 1.5rem;
+      letter-spacing: 0.12px;
+      font-size: 1rem;
+      color: #fff;
+      padding: 0 1rem;
+  
+    }
+  
+    .testimony__header {
+      font-family: $primary-font;
+      font-weight: 600;
+      line-height: 5rem;
+      letter-spacing: 0.24px;
+      font-size: 3.8rem;
+      color: #a0a6b6;
+  
+      span {
+        color: transparent;
+        background-image: linear-gradient(to right, #EAF7FF, #5BC2FF, #8E6CF9);
+        background-clip: text;
+      }
+    }
+  
+    .testimony__description {
+      font-family: $primary-font;
+      font-weight: 300;
+      line-height: 1.5rem;
+      letter-spacing: 0.12px;
+      font-size: 1.22rem;
+      color: #fff;
+      z-index: 1;
+    }
+  
+  }
+  
 
-  .testimony__subheader__container {
+  .testimonial__carousel__container {
+    .testimonial__card {
+      border: 1px solid #1e2036;
+      width: 50rem;
+      border-radius: 1rem;
+      // height: 20rem;
+      padding: 2.5rem;
+      font-size: 1rem;
+      line-height: 1.5rem;
+
+      .testimonial__testimony,
+      .testimonial__location {
+        padding-top: 1rem;
+        font-weight: 300;
+      }
+
+      .testimonial__testifier {
+        font-weight: 600;
+        font-size: 1.5rem;
+        padding-top: 1rem;
+      }
+    }
+
+    .slick-slide>div {
+      margin: 0 1rem;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//form
+#contact__form{
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+}
+#contact__form,
+.form__container {
+  text-align: left;
+  margin-bottom: 4rem;
+  font-family: $primary-font;
+
+  .form__subheader__container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
     .line__in {
@@ -584,7 +663,7 @@
     }
   }
 
-  .testimony__subheader {
+  .form__subheader {
     font-family: $primary-font;
     font-weight: 300;
     line-height: 1.5rem;
@@ -595,8 +674,7 @@
 
   }
 
-  .testimony__header {
-    font-family: $primary-font;
+  .form__header {
     font-weight: 600;
     line-height: 5rem;
     letter-spacing: 0.24px;
@@ -605,39 +683,107 @@
 
     span {
       color: transparent;
-      background-image: linear-gradient(to right, #FFC5C5, #F25E70, #7179FF);
+      background-image: linear-gradient(to right, #C2E8FF, #9AF772);
       background-clip: text;
     }
   }
 
-  .testimony__description {
-    font-family: $primary-font;
+  .form__description {
     font-weight: 300;
     line-height: 1.5rem;
     letter-spacing: 0.12px;
-    font-size: 1.22rem;
+    font-size: 1rem;
     color: #fff;
     z-index: 1;
   }
 
-  .my__testimony {
+  .form__action__container {
+
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 1rem;
-    margin-top: 3rem;
+    justify-content: center;
 
-    img {
-      height: 5rem;
-    }
-
-    .fiverr {
-      padding: 0.8rem 0;
+    form {
+      width: 40rem;
+      
+      input,
+      textarea {
+        width: 100%;
+        padding: 1rem;
+        margin: 1rem 0;
+        border: 1px solid #1e2036;
+        border-radius: 0.3rem;
+      }
+      .submit__btn{
+        padding: 0.7rem 3rem;
+        border-radius: 0.5rem;
+        border: 2px solid #0F4EAD;
+        color: $global-white-color;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 30px;
+        background: #0F4EAD;
+        margin-bottom: 3rem;
+      }
     }
   }
 }
 
 
+
+
+
+
+
+
+
+//footer
+.contact__links {
+  width: 90%;
+  margin-top: 35%;
+
+  .logo {
+    height: 2rem;
+    margin-right: 0.6rem;
+  }
+
+  .contact__header__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .contact__header {
+      font-family: $primary-font;
+      color: rgb(241, 245, 249);
+      font-size: 1.5rem;
+      font-weight: $tertiary-weight-700;
+      letter-spacing: 0.22px;
+
+    }
+
+  }
+
+  .contact__description {
+    margin-top: 1rem;
+    font-family: $primary-font;
+    font-weight: 300;
+    line-height: 1rem;
+    letter-spacing: 0.12px;
+    font-size: 1rem;
+    color: #fff;
+  }
+  .contact__container {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    a{
+      cursor: pointer;
+    }
+  }
+}
 
 
 
