@@ -45,8 +45,6 @@ const Skillset = () => {
           <img src={wordpress} alt="wordpress" />
           <img src={sql} alt="sql" />
           <img src={git} alt="git" />
-
-          {/* <img src={worspress} alt="" /> */}
         </div>
         <div className="my__skillset__tabs">
           <p

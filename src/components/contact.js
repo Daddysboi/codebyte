@@ -28,34 +28,24 @@ const Contact = () => {
         <div className="contact__links">
           <div className="contact__header__container">
             <img src={logo} alt="logo" className="logo" />
-            <h1 className="contact__header">TrustedDevs</h1>
+            <h1 className="contact__header">CodeBytes</h1>
           </div>
           <p className="contact__description">The No. 1 developers online</p>
           <div className="contact__container">
-            <a
-              href="https://github.com/daddysboi"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://github.com/daddysboi" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} />
             </a>
             <a
               href="https://twitter.com/tweetsbytems"
-              target="_blank"
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://linkedin.com" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a
               href="mailto:temitopeahmedyusuf@gmail.com"
-              target="_blank"
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faEnvelope} />
