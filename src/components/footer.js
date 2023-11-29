@@ -9,11 +9,6 @@ import {
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
-  const openLinkInNewTab = (url) => {
-    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
-    if (newWindow) newWindow.opener = null; // For security
-  };
-
   return (
     <footer id="footer">
       <div className="contact__links__2">
@@ -23,11 +18,15 @@ const Footer = () => {
         </div>
         <p className="contact__description">The No. 1 developers online</p>
         <div className="contact__container">
-          <button
-            onClick={() => openLinkInNewTab("https://github.com/daddysboi")}
+          <a
+            href="https://github.com/daddysboi"
+            target="_blank"
+            rel="noopener nonreferrer"
           >
-            <FontAwesomeIcon icon={faGithub} />
-          </button>
+            <div className="github__icon">
+              <FontAwesomeIcon icon={faGithub} />
+            </div>
+          </a>
 
           <a href="https://twitter.com/tweetsbytems" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faTwitter} />

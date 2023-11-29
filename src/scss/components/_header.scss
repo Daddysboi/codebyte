@@ -42,6 +42,10 @@
     font-weight: $secondary-weight-600;
     line-height: 30px;
     padding-right: 1rem;
+    &:hover{
+      transform: scale(1.2);
+      transition: transform 0.5s ease;
+    }
 
   }
 }

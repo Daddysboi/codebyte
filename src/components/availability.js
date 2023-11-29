@@ -25,7 +25,15 @@ const Availability = () => {
             join forces to create without boundaries and transform possibilities
             to achievements
           </p>
-          <button>Hire Me</button>
+          <button
+            onClick={() => {
+              document
+                .getElementById("contact__form")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Hire Me
+          </button>
         </div>
       </div>
     </div>

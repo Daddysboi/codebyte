@@ -16,7 +16,7 @@
   font-family: $primary-font;
 
   &:before {
-    content: '';
+    // content: '';
     position: fixed;
     top: 0;
     left: 0;
@@ -81,6 +81,10 @@
       line-height: 30px;
       background: #0F4EAD;
       margin-right: 1rem;
+      &:hover{
+        background-color: #093577;
+        border: 2px solid #093577;
+      }
 
     }
 
@@ -93,7 +97,10 @@
       font-weight: 500;
       line-height: 30px;
       background: linear-gradient(to top, #313247, rgba(255, 255, 255, 0));
-
+      &:hover{
+        background-color: #093577;
+        border: 2px solid #093577;
+      }
     }
   }
 
@@ -338,6 +345,10 @@
       line-height: 30px;
       background: #0F4EAD;
       margin-right: 1rem;
+      &:hover{
+        background-color: #093577;
+        border: 2px solid #093577;
+      }
     }
   }
 }
@@ -714,6 +725,7 @@
         margin: 1rem 0;
         border: 1px solid #1e2036;
         border-radius: 0.3rem;
+        color: white;
       }
 
       .submit__btn {
@@ -726,6 +738,10 @@
         line-height: 30px;
         background: #0F4EAD;
         margin-bottom: 3rem;
+        &:hover{
+          background-color: #093577;
+          border: 2px solid #093577;
+        }
       }
     }
   }
@@ -785,6 +801,10 @@
 
     a {
       cursor: pointer;
+      &:hover{
+        transform: scale(1.5);
+        transition: transform 0.3s ease;
+      }
     }
   }
 }

@@ -69,6 +69,10 @@ body::-webkit-scrollbar {
   line-height: 30px;
   padding-right: 1rem;
 }
+.header-container .github__icon:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .header-container {
@@ -264,7 +268,6 @@ body::-webkit-scrollbar {
   font-family: "Inter", sans-serif;
 }
 #banner:before {
-  content: "";
   position: fixed;
   top: 0;
   left: 0;
@@ -324,6 +327,10 @@ body::-webkit-scrollbar {
   background: #0F4EAD;
   margin-right: 1rem;
 }
+#banner .button-container .button-hire-left:hover {
+  background-color: #093577;
+  border: 2px solid #093577;
+}
 #banner .button-container .button-hire-right {
   border: 2px solid #9a9ba5;
   border-radius: 0.4rem;
@@ -333,6 +340,10 @@ body::-webkit-scrollbar {
   font-weight: 500;
   line-height: 30px;
   background: linear-gradient(to top, #313247, rgba(255, 255, 255, 0));
+}
+#banner .button-container .button-hire-right:hover {
+  background-color: #093577;
+  border: 2px solid #093577;
 }
 #banner .banner__rating {
   display: flex;
@@ -522,6 +533,10 @@ body::-webkit-scrollbar {
   line-height: 30px;
   background: #0F4EAD;
   margin-right: 1rem;
+}
+#availability .my__availability button:hover {
+  background-color: #093577;
+  border: 2px solid #093577;
 }
 
 #skillset {
@@ -801,6 +816,7 @@ body::-webkit-scrollbar {
   margin: 1rem 0;
   border: 1px solid #1e2036;
   border-radius: 0.3rem;
+  color: white;
 }
 #contact__form .form__action__container form .submit__btn,
 .form__container .form__action__container form .submit__btn {
@@ -813,6 +829,11 @@ body::-webkit-scrollbar {
   line-height: 30px;
   background: #0F4EAD;
   margin-bottom: 3rem;
+}
+#contact__form .form__action__container form .submit__btn:hover,
+.form__container .form__action__container form .submit__btn:hover {
+  background-color: #093577;
+  border: 2px solid #093577;
 }
 
 .contact__links {
@@ -854,6 +875,10 @@ body::-webkit-scrollbar {
 }
 .contact__links .contact__container a {
   cursor: pointer;
+}
+.contact__links .contact__container a:hover {
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {

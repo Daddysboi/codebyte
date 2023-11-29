@@ -26,15 +26,16 @@ const Banner = () => {
           ...Innovate, illuminate, inspire, the future starts with a good dev
         </p>
         <div className="button-container">
-          <Link
-            to="contact__form"
-            duration={500}
-            spy={true}
-            smooth={true}
-            offset={-100}
+          <button
+            className="button-hire-left"
+            onClick={() => {
+              document
+                .getElementById("contact__form")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
           >
-            <button className="button-hire-left">Hire Now</button>
-          </Link>
+            Hire Now
+          </button>
           <a href={Temitope_Yusuf_Cv} download="Temitope_Yusuf_Cv">
             <button className="button-hire-right">
               MY CV
