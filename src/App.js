@@ -1,31 +1,26 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import React from "react";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
 import "./css/style.css";
-import Header from "./components/header";
-import Banner from "./components/banner";
-import Experience from "./components/experience";
-import Availability from "./components/availability";
-import Skillset from "./components/skillset";
-import Footer from "./components/footer";
-import Testimony from "./components/testimony";
-import Contact from "./components/contact";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import RootLayout from "./layout/RootLayout";
+import Home from "./pages/Home";
+import Error404 from "./pages/Error404";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<RootLayout />}>
+      <Route index element={<Home />} />
+      <Route path="*" element={<Error404 />} />
+    </Route>
+  )
+);
 
 function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Header />
-        <Banner />
-        <Experience />
-        <Availability />
-        <Skillset />
-        <Testimony />
-        <Contact />
-        <Footer />
-      </div>
-    </Router>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

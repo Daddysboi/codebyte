@@ -1,6 +1,6 @@
 {
-  "homepage": "https://daddysboi.github.io/codebyte",
-  "name": "devbriliance",
+  "homepage": "https://daddysboi.github.io/",
+  "name": "codebyte",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -27,7 +27,7 @@
     "postcss-cli": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^5.3.4",
+    "react-router-dom": "^6.20.1",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.0",
     "react-slick": "^0.29.0",
@@ -68,6 +68,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "concurrently": "^8.2.2",
     "gh-pages": "^6.1.0"
   }

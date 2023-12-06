@@ -17,7 +17,7 @@ const Header = () => {
       <a
         href="https://github.com/daddysboi"
         target="_blank"
-        rel="noopener nonreferrer"
+        rel="noopener noreferrer"
       >
         <div className="github__icon">
           <FontAwesomeIcon icon={faGithub} />

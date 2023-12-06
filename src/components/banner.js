@@ -1,11 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faD,
-  faDownload,
-  faExplosion,
-} from "@fortawesome/free-solid-svg-icons";
+import { faDownload, faExplosion } from "@fortawesome/free-solid-svg-icons";
 import Temitope_Yusuf_Cv from "../assets/files/Temitope Yusuf.pdf";
 
 const Banner = () => {
