@@ -89,8 +89,8 @@ const Skillset = () => {
             <li>Languages: HTML, CSS3, JavaScript (ES6+)</li>
             <li>CMS: Wordpress</li>
             <li>
-              Frameworks/Libraries: React.js,Styles Components, SASS, Bootstrap,
-              Tailwind
+              Frameworks/Libraries: React.js, Styles Components, SASS,
+              Bootstrap, Tailwind
             </li>
             <li>Next.js for Server-Side Rendering (SSR) </li>
             <li>Version Control: Git/GitHub</li>

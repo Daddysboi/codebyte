@@ -53,7 +53,7 @@ const Contact = () => {
             <img src={logo} alt="logo" className="logo" />
             <h1 className="contact__header">CodeBytes</h1>
           </div>
-          <p className="contact__description">The No. 1 developers online</p>
+          <p className="contact__description">The No. 1 developer online</p>
           <div className="contact__container">
             <a
               href="https://github.com/daddysboi"

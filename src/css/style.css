@@ -936,7 +936,7 @@ body::-webkit-scrollbar {
     font-size: 3rem;
   }
   #availability .availability__description {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 0 1rem;
   }
   #availability .my__availability {
@@ -953,10 +953,13 @@ body::-webkit-scrollbar {
   #availability .my__availability p {
     padding-top: 6rem;
     line-height: 1.5rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-bottom: 2rem;
     width: 20rem;
     height: 20rem;
+  }
+  #skillset .skillset__description {
+    font-size: 0.9rem;
   }
   #skillset .my__skillset__tabs {
     margin: 0 auto;
@@ -964,7 +967,7 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     align-items: right;
     gap: 0.5rem;
-    margin: 3rem 1rem;
+    margin: 2rem 1.2rem;
   }
   #skillset .my__skillset__tabs .tab__links {
     font-size: 0.7rem;
