@@ -638,7 +638,7 @@ body::-webkit-scrollbar {
   font-family: "Inter", sans-serif;
   width: 70%;
   margin: 10px auto;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.5rem;
 }
 #skillset .tab__contents ul li span {
@@ -650,6 +650,11 @@ body::-webkit-scrollbar {
 }
 #skillset .active__tab {
   display: block;
+}
+
+.error-field {
+  color: red;
+  border-color: red;
 }
 
 #testimony {
@@ -820,6 +825,7 @@ body::-webkit-scrollbar {
 }
 #contact__form .form__action__container form .submit__btn,
 .form__container .form__action__container form .submit__btn {
+  margin-top: 1rem;
   padding: 0.7rem 3rem;
   border-radius: 0.5rem;
   border: 2px solid #0F4EAD;
@@ -829,6 +835,7 @@ body::-webkit-scrollbar {
   line-height: 30px;
   background: #0F4EAD;
   margin-bottom: 3rem;
+  display: block;
 }
 #contact__form .form__action__container form .submit__btn:hover,
 .form__container .form__action__container form .submit__btn:hover {

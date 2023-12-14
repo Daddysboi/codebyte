@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import logo from "../assets/logo/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,8 +8,44 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "@emailjs/browser";
+
+// ... (imports)
+
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    your_name: "",
+    your_email: "",
+    message: "",
+  });
+  const [errors, setErrors] = useState({
+    your_name: "",
+    your_email: "",
+    message: "",
+  });
   const form = useRef();
+
+  const validateForm = () => {
+    let isValid = true;
+    const newErrors = {};
+
+    if (!formData.your_name.trim()) {
+      newErrors.your_name = "Name is required";
+      isValid = false;
+    }
+
+    if (!formData.your_email.trim()) {
+      newErrors.your_email = "Email is required";
+      isValid = false;
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required";
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -27,11 +63,23 @@ const Contact = () => {
           e.target.reset();
         },
         (error) => {
-          console.error("Failed to send email:", error);
           alert("Failed to send email. Please try again.");
         }
       );
   };
+
+  const handleInputChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (validateForm()) {
+      sendEmail(e);
+    }
+  };
+
   return (
     <div id="contact__form">
       <div className="form__container">
@@ -85,17 +133,37 @@ const Contact = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div>{" "}
       <div className="form__action__container">
-        <form onSubmit={sendEmail} ref={form}>
-          <input type="text" placeholder="Full Name" name="your_name" />
-          <input type="text" placeholder="email" name="your_email" />
+        <form onSubmit={handleSubmit} ref={form}>
+          <input
+            type="text"
+            placeholder="Full Name"
+            onChange={handleInputChange}
+            name="your_name"
+            className={errors.your_name ? "error-field" : ""}
+          />
+          <span className="error">{errors.your_name}</span>
+
+          <input
+            type="text"
+            placeholder="Email"
+            onChange={handleInputChange}
+            name="your_email"
+            className={errors.your_email ? "error-field" : ""}
+          />
+          <span className="error">{errors.your_email}</span>
+
           <textarea
             cols="30"
             rows="10"
             placeholder="Your Message"
             name="message"
-          ></textarea>
+            onChange={handleInputChange}
+            className={errors.message ? "error-field" : ""}
+          />
+          <span className="error">{errors.message}</span>
+
           <button className="submit__btn" type="submit" value="send">
             Submit
           </button>

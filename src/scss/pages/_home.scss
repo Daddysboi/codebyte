@@ -490,7 +490,7 @@
     font-family: $primary-font;
     width: 70%;
     margin: 10px auto;
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1.5rem;
 
     span {
@@ -513,7 +513,10 @@
 
 
 
-
+.error-field{
+  color: red;
+  border-color: red;
+}
 
 
 
@@ -729,6 +732,7 @@
       }
 
       .submit__btn {
+        margin-top: 1rem;
         padding: 0.7rem 3rem;
         border-radius: 0.5rem;
         border: 2px solid #0F4EAD;
@@ -738,6 +742,7 @@
         line-height: 30px;
         background: #0F4EAD;
         margin-bottom: 3rem;
+        display: block;
         &:hover{
           background-color: #093577;
           border: 2px solid #093577;
