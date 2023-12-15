@@ -57,43 +57,9 @@ const Testimony = () => {
     ],
   };
 
-  const setting = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 2.1,
-    slidesToScroll: 1,
-    autoplay: true,
-    arrows: false,
-    speed: 15000,
-    autoplaySpeed: 15000,
-    cssEase: "linear",
-    rtl: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        setting: {
-          slidesToShow: 2,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        setting: {
-          slidesToShow: 1.2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        setting: {
-          slidesToShow: 1.2,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+  const secondSettings = {
+    ...settings,
+    rtl: true, // Right-to-Left for reverse direction
   };
 
   return (
@@ -127,7 +93,7 @@ const Testimony = () => {
         </Slider>
       </div>
       <div className="testimonial__carousel__container">
-        <Slider {...setting}>
+        <Slider {...secondSettings}>
           {testimonialData.map((testimony, index) => (
             <div className="testimonial__card" key={index}>
               <div className="testimonial__rating">
