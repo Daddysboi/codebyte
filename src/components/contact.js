@@ -61,7 +61,9 @@ const Contact = () => {
       .then(
         (result) => {
           setUserAlert(
-            <FontAwesomeIcon icon={faCheck} /> + " Email Sent Successfully 🎉"
+            <div>
+              <FontAwesomeIcon icon={faCheck} /> Email Sent Successfully 😄
+            </div>
           );
           e.target.reset();
         },
@@ -69,7 +71,7 @@ const Contact = () => {
           setUserAlert(
             <div>
               <FontAwesomeIcon icon={faTimes} /> Failed to send email. Please
-              try again.
+              try again. 😞
             </div>
           );
         }
