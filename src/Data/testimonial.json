@@ -1,74 +1,134 @@
 [
   {
-    "name": "Gilbert Asumwisye",
-    "location": "Tanzania",
+    "name": "Tobi Adekunle",
+    "location": "Lagos, Nigeria",
     "rating": 5,
-    "message": "The course was refreshing, interactive and interesting; a good mixture of a practical and theory with enough time to discuss issues."
+    "message": "He is an outstanding developer. His attention to detail and creativity are unparalleled. I highly recommend his services."
   },
   {
-    "name": "Richard Ameh",
-    "location": "Tanzania",
+    "name": "Chioma Okoye",
+    "location": "Abuja, Nigeria",
     "rating": 4,
-    "message": "The course was refreshing, interactive and interesting; a good mixture of a practical and theory with enough time to discuss issues."
+    "message": "Working with Temi was a great experience. He delivered high-quality work within the specified timeframe. Very professional and skilled developer."
   },
   {
-    "name": "Adeyemi Ameerah",
-    "location": "Nigeria",
+    "name": "David Johnson",
+    "location": "New York, USA",
     "rating": 5,
-    "message": "It was an immense pleasure to test the skills acquired during this program, through the holistically conceived individual projects and also enjoyed working with fellow trainees on group project."
+    "message": "I am impressed with their web development skills. He has a deep understanding of front-end technologies and can bring any design to life."
   },
   {
-    "name": "Sonna Maël",
-    "location": "Cameroun",
+    "name": "Aisha Mohammed",
+    "location": "Dubai, UAE",
     "rating": 4,
-    "message": "CWW has given me a good opportunity to start a career in tech. I learnt more than I thought I would. My facilitator did a great job in impacting knowledge into us and I’m glad to be beneficiary of CWW Cohort 1.0."
+    "message": "He is a reliable and talented developer. He communicates effectively and ensures that the client's vision is captured in the final product."
   },
   {
-    "name": "Jane Doe",
-    "location": "South Africa",
-    "rating": 4,
-    "message": "CWW has given me a good opportunity to start a career in tech. I learnt more than I thought I would. My facilitator did a great job in impacting knowledge into us and I’m glad to be beneficiary of CWW Cohort 1.0."
-  },
-  {
-    "name": "Sani Muhammed",
-    "location": "Nigeria",
-    "rating": 4,
-    "message": "CWW has given me a good opportunity to start a career in tech. I learnt more than I thought I would. My facilitator did a great job in impacting knowledge into us and I’m glad to be beneficiary of CWW Cohort 1.0."
-  },
-  {
-    "name": "Gilbert Asumwisye",
-    "location": "Tanzania",
+    "name": "Michael Olatunji",
+    "location": "London, UK",
     "rating": 5,
-    "message": "The course was refreshing, interactive and interesting; a good mixture of a practical and theory with enough time to discuss issues."
+    "message": "I had a great experience working with him. He is responsive, creative, and delivers top-notch web development services. Highly recommended."
   },
   {
-    "name": "Richard Ameh",
-    "location": "Tanzania",
+    "name": "Grace Okon",
+    "location": "Nairobi, Kenya",
     "rating": 4,
-    "message": "The course was refreshing, interactive and interesting; a good mixture of a practical and theory with enough time to discuss issues."
+    "message": "He exceeded my expectations with his web development skills. He is passionate about creating functional and visually appealing websites."
   },
   {
-    "name": "Adeyemi Ameerah",
-    "location": "Nigeria",
+    "name": "Chuka Eze",
+    "location": "Cape Town, South Africa",
     "rating": 5,
-    "message": "It was an immense pleasure to test the skills acquired during this program, through the holistically conceived individual projects and also enjoyed working with fellow trainees on group project."
+    "message": "I am very satisfied with Temitope's work. He is a skilled front-end developer, and his attention to detail is commendable. I would hire him again."
   },
   {
-    "name": "Sonna Maël",
-    "location": "Cameroun",
+    "name": "Fatima Aliyu",
+    "location": "Doha, Qatar",
     "rating": 4,
-    "message": "CWW has given me a good opportunity to start a career in tech. I learnt more than I thought I would. My facilitator did a great job in impacting knowledge into us and I’m glad to be beneficiary of CWW Cohort 1.0."
+    "message": "Working with codebye was a pleasure. He brought creativity and technical expertise to our project, resulting in a stunning website. Highly recommended."
   },
   {
-    "name": "Jane Doe",
-    "location": "South Africa",
-    "rating": 4,
-    "message": "CWW has given me a good opportunity to start a career in tech. I learnt more than I thought I would. My facilitator did a great job in impacting knowledge into us and I’m glad to be beneficiary of CWW Cohort 1.0."
+    "name": "Abdul Suleiman",
+    "location": "Kuala Lumpur, Malaysia",
+    "rating": 5,
+    "message": "Temitope is a dedicated and talented web developer. He goes above and beyond to ensure client satisfaction. I am impressed with his skills."
   },
   {
-    "name": "Sani Muhammed",
-    "location": "Nigeria",
+    "name": "Ebere Udeh",
+    "location": "Mumbai, India",
     "rating": 4,
-    "message": "CWW has given me a good opportunity to start a career in tech. I learnt more than I thought I would. My facilitator did a great job in impacting knowledge into us and I’m glad to be beneficiary of CWW Cohort 1.0."
+    "message": "I had a great experience working with codebye. He is a skilled front-end developer with a keen eye for design. I would recommend him to anyone."
+  },
+  {
+    "name": "Sadiq Bello",
+    "location": "Singapore",
+    "rating": 5,
+    "message": "He is a professional and reliable web developer. He delivered our project on time and exceeded our expectations. I highly recommend his services."
+  },
+  {
+    "name": "Linda Nwosu",
+    "location": "Sydney, Australia",
+    "rating": 4,
+    "message": "I am impressed with their web development skills. He is responsive, creative, and delivers high-quality work. I would hire him again for future projects."
+  },
+  {
+    "name": "Usman Ibrahim",
+    "location": "Tokyo, Japan",
+    "rating": 5,
+    "message": "They are professional and talented developers. He delivered our project with precision and creativity. I recommend him for any web development work."
+  },
+  {
+    "name": "Blessing Okoro",
+    "location": "Rio de Janeiro, Brazil",
+    "rating": 4,
+    "message": "Working with Temitope was a pleasure. He is a skilled web developer who brings creativity and expertise to every project. I look forward to working with him again."
+  },
+  {
+    "name": "Abubakar Ahmed",
+    "location": "Istanbul, Turkey",
+    "rating": 5,
+    "message": "codebye is a dedicated and talented web developer. He pays attention to detail and delivers projects with precision. I am happy with his services and would hire him again."
+  },
+  {
+    "name": "Chiamaka Okafor",
+    "location": "Paris, France",
+    "rating": 4,
+    "message": "I am impressed with Temi's web development skills. He is a pleasure to work with, and I am satisfied with the results. I would recommend him for any web development project."
+  },
+  {
+    "name": "Femi Adebayo",
+    "location": "Berlin, Germany",
+    "rating": 5,
+    "message": "He pays attention to detail and ensures that the client's vision is translated into a visually stunning website. Highly recommended."
+  },
+  {
+    "name": "Ngozi Okonkwo",
+    "location": "Amsterdam, Netherlands",
+    "rating": 4,
+    "message": "Working with him was a great experience. He is a skilled front-end developer who brings creativity and expertise to every project. I look forward to collaborating with him in the future."
+  },
+  {
+    "name": "Yusuf Adekunle",
+    "location": "Toronto, Canada",
+    "rating": 5,
+    "message": "He brought creativity and technical expertise to our project, resulting in a website that exceeded our expectations."
+  },
+  {
+    "name": "Folake Akintola",
+    "location": "Barcelona, Spain",
+    "rating": 4,
+    "message": "I am impressed. He is a pleasure to work with, and I am satisfied with the results. I would recommend him for any web development project."
+  },
+  {
+    "name": "Abdullahi Balarabe",
+    "location": "Dublin, Ireland",
+    "rating": 5,
+    "message": "He pays attention to detail and delivers projects with precision. I am happy with his services and would hire him again."
+  },
+  {
+    "name": "Chinonso Okafor",
+    "location": "Cape Town, South Africa",
+    "rating": 4,
+    "message": "He is a skilled front-end developer who brings creativity and expertise to every project. I look forward to collaborating with him in the future."
   }
 ]

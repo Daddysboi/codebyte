@@ -43,7 +43,7 @@ const Banner = () => {
           <div className="review__tip">
             <p className="stars">&#9733;&#9733;&#9733;&#9733;&#9733; </p>
             <p className="review__desc">
-              reviews on<span> Fiver</span>
+              reviews on<span> Fiverr</span>
             </p>
           </div>
         </div>

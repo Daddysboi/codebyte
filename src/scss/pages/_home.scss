@@ -513,9 +513,10 @@
 
 
 
-.error-field{
-  color: red;
-  border-color: red;
+.Validation__alert{
+  font-size: 0.8rem;
+  color: green;;
+  border-radius: 0.3rem;
 }
 
 
@@ -598,6 +599,7 @@
 
 
   .testimonial__carousel__container {
+    margin-bottom: 2rem;
     .testimonial__card {
       border: 1px solid #1e2036;
       width: 50rem;

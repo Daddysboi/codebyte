@@ -57,6 +57,45 @@ const Testimony = () => {
     ],
   };
 
+  const setting = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 2.1,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: false,
+    speed: 15000,
+    autoplaySpeed: 15000,
+    cssEase: "linear",
+    rtl: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        setting: {
+          slidesToShow: 2,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        setting: {
+          slidesToShow: 1.2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        setting: {
+          slidesToShow: 1.2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div id="testimony">
       <div className="testimony__header_section">
@@ -75,6 +114,20 @@ const Testimony = () => {
       </div>
       <div className="testimonial__carousel__container">
         <Slider {...settings}>
+          {testimonialData.map((testimony, index) => (
+            <div className="testimonial__card" key={index}>
+              <div className="testimonial__rating">
+                {renderStars(testimony.rating)}
+              </div>
+              <p className="testimonial__testimony">{testimony.message}</p>
+              <h1 className="testimonial__testifier">{testimony.name}</h1>
+              <p className="testimonial__location">{testimony.location}</p>
+            </div>
+          ))}
+        </Slider>
+      </div>
+      <div className="testimonial__carousel__container">
+        <Slider {...setting}>
           {testimonialData.map((testimony, index) => (
             <div className="testimonial__card" key={index}>
               <div className="testimonial__rating">

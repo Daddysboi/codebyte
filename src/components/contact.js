@@ -8,8 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "@emailjs/browser";
-
-// ... (imports)
+import { faCheck, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -22,6 +21,7 @@ const Contact = () => {
     your_email: "",
     message: "",
   });
+  const [userAlert, setUserAlert] = useState("");
   const form = useRef();
 
   const validateForm = () => {
@@ -46,6 +46,7 @@ const Contact = () => {
     setErrors(newErrors);
     return isValid;
   };
+  // ...
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -59,11 +60,18 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          alert("Email Sent Successfully");
+          setUserAlert(
+            <FontAwesomeIcon icon={faCheck} /> + " Email Sent Successfully 🎉"
+          );
           e.target.reset();
         },
         (error) => {
-          alert("Failed to send email. Please try again.");
+          setUserAlert(
+            <div>
+              <FontAwesomeIcon icon={faTimes} /> Failed to send email. Please
+              try again.
+            </div>
+          );
         }
       );
   };
@@ -84,7 +92,6 @@ const Contact = () => {
     <div id="contact__form">
       <div className="form__container">
         <div className="form__subheader__container">
-          {/* <div className="line__in"></div> */}
           <h2 className="form__subheader">Get in Touch</h2>
           <div className="line__out"></div>
         </div>
@@ -93,8 +100,7 @@ const Contact = () => {
           <span>Contact Me</span>
         </h1>
         <p className="form__description">
-          .....Please, fill in the form below to leave me a message on work
-          opportunities
+          .....Please, leave me a message on work opportunities
         </p>
         <div className="contact__links">
           <div className="contact__header__container">
@@ -136,6 +142,7 @@ const Contact = () => {
       </div>{" "}
       <div className="form__action__container">
         <form onSubmit={handleSubmit} ref={form}>
+          <span className="Validation__alert">{userAlert}</span>
           <input
             type="text"
             placeholder="Full Name"

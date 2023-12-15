@@ -652,9 +652,10 @@ body::-webkit-scrollbar {
   display: block;
 }
 
-.error-field {
-  color: red;
-  border-color: red;
+.Validation__alert {
+  font-size: 0.8rem;
+  color: green;
+  border-radius: 0.3rem;
 }
 
 #testimony {
@@ -713,6 +714,9 @@ body::-webkit-scrollbar {
   font-size: 1.22rem;
   color: #fff;
   z-index: 1;
+}
+#testimony .testimonial__carousel__container {
+  margin-bottom: 2rem;
 }
 #testimony .testimonial__carousel__container .testimonial__card {
   border: 1px solid #1e2036;
