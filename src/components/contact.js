@@ -33,8 +33,12 @@ const Contact = () => {
       isValid = false;
     }
 
-    if (!formData.your_email.trim()) {
-      newErrors.your_email = "Email is required";
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (
+      !formData.your_email.trim() ||
+      !emailRegex.test(formData.your_email.trim())
+    ) {
+      newErrors.your_email = "Valid email is required";
       isValid = false;
     }
 
