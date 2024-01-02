@@ -5,40 +5,50 @@ import {
   faGithub,
   faTwitter,
   faInstagram,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "@emailjs/browser";
 import { faCheck, faTimes } from "@fortawesome/free-solid-svg-icons";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    your_name: "",
-    your_email: "",
+    user_name: "",
+    user_email: "",
     message: "",
   });
   const [errors, setErrors] = useState({
-    your_name: "",
-    your_email: "",
+    user_name: "",
+    user_email: "",
     message: "",
   });
   const [userAlert, setUserAlert] = useState("");
   const form = useRef();
+  const [isVerified, setVerified] = useState(false);
+
+  const handleVerification = (response) => {
+    // Set the verification status when reCAPTCHA is solved
+    if (response) {
+      setVerified(true);
+    }
+  };
 
   const validateForm = () => {
     let isValid = true;
     const newErrors = {};
 
-    if (!formData.your_name.trim()) {
-      newErrors.your_name = "Name is required";
+    if (!formData.user_name.trim()) {
+      newErrors.user_name = "Name is required";
       isValid = false;
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (
-      !formData.your_email.trim() ||
-      !emailRegex.test(formData.your_email.trim())
+      !formData.user_email.trim() ||
+      !emailRegex.test(formData.user_email.trim())
     ) {
-      newErrors.your_email = "Valid email is required";
+      newErrors.user_email = "Valid email is required";
       isValid = false;
     }
 
@@ -50,17 +60,29 @@ const Contact = () => {
     setErrors(newErrors);
     return isValid;
   };
-  // ...
 
   const sendEmail = (e) => {
     e.preventDefault();
 
+    if (
+      formData.user_email.trim().toLowerCase() ===
+      "temitopeahmedyusuf@gmail.com"
+    ) {
+      setUserAlert(
+        <div>
+          <FontAwesomeIcon icon={faTimes} /> Please provide a valid recipient
+          email address. 😞
+        </div>
+      );
+      return;
+    }
     emailjs
       .sendForm(
         "service_3wmm7yr",
         "template_2ik1cmd",
         form.current,
-        "Zo_tLupx8aK5_BDna"
+        "Zo_tLupx8aK5_BDna",
+        { ga_measurement_id: "G-1WPKCVQ0HX" }
       )
       .then(
         (result) => {
@@ -89,8 +111,24 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (validateForm()) {
-      sendEmail(e);
+    if (isVerified) {
+      if (validateForm()) {
+        sendEmail(e);
+      } else {
+        setUserAlert(
+          <div>
+            <FontAwesomeIcon icon={faTimes} /> Please fill in all required
+            fields.
+          </div>
+        );
+      }
+    } else {
+      setUserAlert(
+        <div>
+          <FontAwesomeIcon icon={faTimes} /> Please complete the reCAPTCHA
+          challenge.
+        </div>
+      );
     }
   };
 
@@ -114,34 +152,44 @@ const Contact = () => {
             <h1 className="contact__header">CodeBytes</h1>
           </div>
           <p className="contact__description">The No. 1 developer online</p>
+          <p className="contact__description">
+            <FontAwesomeIcon icon={faPhone} style={{ color: "#25D366" }} />{" "}
+            <a href="https://wa.me/2348120685697" target="_blank">
+              <FontAwesomeIcon icon={faWhatsapp} style={{ color: "#25D366" }} />
+            </a>{" "}
+            +234-812-068-5697
+          </p>
           <div className="contact__container">
             <a
               href="https://github.com/daddysboi"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FontAwesomeIcon icon={faGithub} />
+              <FontAwesomeIcon icon={faGithub} style={{ color: "white" }} />
             </a>
             <a
               href="https://twitter.com/tweetbytems"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FontAwesomeIcon icon={faTwitter} />
+              <FontAwesomeIcon icon={faTwitter} style={{ color: "#1DA1F2" }} />
             </a>
             <a
               href="https://www.instagram.com/dadysboi/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FontAwesomeIcon icon={faInstagram} />
+              <FontAwesomeIcon
+                icon={faInstagram}
+                style={{ color: "#E4405F" }}
+              />
             </a>
             <a
               href="mailto:temitopeahmedyusuf@gmail.com"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FontAwesomeIcon icon={faEnvelope} style={{ color: "#EA4335" }} />
             </a>
           </div>
         </div>
@@ -153,19 +201,19 @@ const Contact = () => {
             type="text"
             placeholder="Full Name"
             onChange={handleInputChange}
-            name="your_name"
-            className={errors.your_name ? "error-field" : ""}
+            name="user_name"
+            className={errors.user_name ? "error-field" : ""}
           />
-          <span className="error">{errors.your_name}</span>
+          <span className="error">{errors.user_name}</span>
 
           <input
             type="text"
             placeholder="Email"
             onChange={handleInputChange}
-            name="your_email"
-            className={errors.your_email ? "error-field" : ""}
+            name="user_email"
+            className={errors.user_email ? "error-field" : ""}
           />
-          <span className="error">{errors.your_email}</span>
+          <span className="error">{errors.user_email}</span>
 
           <textarea
             cols="30"
@@ -176,7 +224,10 @@ const Contact = () => {
             className={errors.message ? "error-field" : ""}
           />
           <span className="error">{errors.message}</span>
-
+          <ReCAPTCHA
+            sitekey="6LdFzEMpAAAAAFuey4yh85g7vNj3zP9dksZ7YaAA" // Replace with your actual reCAPTCHA site key
+            onChange={(response) => handleVerification(response)}
+          />
           <button className="submit__btn" type="submit" value="send">
             Submit
           </button>

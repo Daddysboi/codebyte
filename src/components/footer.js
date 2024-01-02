@@ -4,9 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faTwitter,
-  faLinkedin,
+  faInstagram,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
@@ -17,28 +18,41 @@ const Footer = () => {
           <h1 className="contact__header">CodeBytes</h1>
         </div>
         <p className="contact__description">The No. 1 developer online</p>
+        <p className="contact__description">
+          <FontAwesomeIcon icon={faPhone} style={{ color: "#25D366" }} />{" "}
+          <a href="https://wa.me/2348120685697" target="_blank">
+            <FontAwesomeIcon icon={faWhatsapp} style={{ color: "#25D366" }} />
+          </a>{" "}
+          +234-812-068-5697
+        </p>
         <div className="contact__container">
           <a
             href="https://github.com/daddysboi"
-            target="_blank"
             rel="noopener noreferrer"
+            target="_blank"
           >
-            <div className="github__icon">
-              <FontAwesomeIcon icon={faGithub} />
-            </div>
+            <FontAwesomeIcon icon={faGithub} style={{ color: "white" }} />
           </a>
-
-          <a href="https://twitter.com/tweetsbytems" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faTwitter} />
+          <a
+            href="https://twitter.com/tweetbytems"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faTwitter} style={{ color: "#1DA1F2" }} />
           </a>
-          <a href="https://linkedin.com" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} />
+          <a
+            href="https://www.instagram.com/dadysboi/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faInstagram} style={{ color: "#E4405F" }} />
           </a>
           <a
             href="mailto:temitopeahmedyusuf@gmail.com"
             rel="noopener noreferrer"
+            target="_blank"
           >
-            <FontAwesomeIcon icon={faEnvelope} />
+            <FontAwesomeIcon icon={faEnvelope} style={{ color: "#EA4335" }} />
           </a>
         </div>
       </div>
