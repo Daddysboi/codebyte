@@ -1,10 +1,10 @@
 import React from "react";
-import Banner from "../components/banner.js";
-import Experience from "../components/experience.js";
-import Availability from "../components/availability.js";
-import Skillset from "../components/skillset.js";
-import Testimony from "../components/testimony.js";
-import Contact from "../components/contact.js";
+import Banner from "../components/banner";
+import Experience from "../components/experience";
+import Availability from "../components/availability";
+import Skillset from "../components/skillset";
+import Testimony from "../components/testimony";
+import Contact from "../components/contact";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -15,7 +15,7 @@ function Home() {
       <Experience />
       <Availability />
       <Skillset />
-      {/* <Testimony /> */}
+      <Testimony />
       <Contact />
     </div>
   );
