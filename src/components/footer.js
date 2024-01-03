@@ -58,7 +58,7 @@ const Footer = () => {
       </div>
 
       <div className="footer__line"></div>
-      <p className="footer__copyright">Copyright © 2023 CodeBytes</p>
+      <p className="footer__copyright">Copyright © 2024 CodeBytes</p>
     </footer>
   );
 };

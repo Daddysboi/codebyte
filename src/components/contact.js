@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import logo from "../assets/logo/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -27,8 +27,33 @@ const Contact = () => {
   const form = useRef();
   const [isVerified, setVerified] = useState(false);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/.netlify/functions/api", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (!response.ok) {
+          throw new Error(`API request failed with status ${response.status}`);
+        }
+
+        const result = await response.json();
+        console.log(result);
+        // Handle the result as needed
+      } catch (error) {
+        console.error("Error fetching data:", error);
+        setIsError(true); // Set the error state to true
+      }
+    };
+
+    fetchData();
+  }, [formData]);
   const handleVerification = (response) => {
-    // Set the verification status when reCAPTCHA is solved
     if (response) {
       setVerified(true);
     }
@@ -229,7 +254,7 @@ const Contact = () => {
           />
           <span className="error">{errors.message}</span>
           <ReCAPTCHA
-            sitekey="6LdFzEMpAAAAAFuey4yh85g7vNj3zP9dksZ7YaAA" // Replace with your actual reCAPTCHA site key
+            sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
             onChange={(response) => handleVerification(response)}
           />
           <button className="submit__btn" type="submit" value="send">
