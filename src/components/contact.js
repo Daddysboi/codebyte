@@ -154,7 +154,11 @@ const Contact = () => {
           <p className="contact__description">The No. 1 developer online</p>
           <p className="contact__description">
             <FontAwesomeIcon icon={faPhone} style={{ color: "#25D366" }} />{" "}
-            <a href="https://wa.me/2348120685697" target="_blank">
+            <a
+              href="https://wa.me/2348120685697"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faWhatsapp} style={{ color: "#25D366" }} />
             </a>{" "}
             +234-812-068-5697

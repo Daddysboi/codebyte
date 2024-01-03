@@ -14,11 +14,7 @@ const Header = () => {
           <h1>CodeBytes</h1>
         </div>
       </Link>
-      <a
-        href="https://github.com/daddysboi"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href="https://github.com/daddysboi" target="_blank" rel="noreferrer">
         <div className="github__icon">
           <FontAwesomeIcon icon={faGithub} />
         </div>
