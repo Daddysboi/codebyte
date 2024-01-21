@@ -47,7 +47,6 @@ const Contact = () => {
         // Handle the result as needed
       } catch (error) {
         console.error("Error fetching data:", error);
-        setIsError(true); // Set the error state to true
       }
     };
 
