@@ -11,6 +11,7 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "@emailjs/browser";
 import { faCheck, faTimes } from "@fortawesome/free-solid-svg-icons";
 import ReCAPTCHA from "react-google-recaptcha";
+import axios from "axios";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -26,16 +27,16 @@ const Contact = () => {
   const [userAlert, setUserAlert] = useState("");
   const form = useRef();
   const [isVerified, setVerified] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
+      setIsLoading(true);
       try {
-        const response = await fetch("/.netlify/functions/api", {
-          method: "POST",
+        const response = await axios.post("/.netlify/functions/api", {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(formData),
         });
 
         if (!response.ok) {
@@ -223,43 +224,47 @@ const Contact = () => {
         </div>
       </div>{" "}
       <div className="form__action__container">
-        <form onSubmit={handleSubmit} ref={form}>
-          <span className="Validation__alert">{userAlert}</span>
-          <input
-            type="text"
-            placeholder="Full Name"
-            onChange={handleInputChange}
-            name="user_name"
-            className={errors.user_name ? "error-field" : ""}
-          />
-          <span className="error">{errors.user_name}</span>
+        {isLoading ? (
+          <p>Loading...</p>
+        ) : (
+          <form onSubmit={handleSubmit} ref={form}>
+            <span className="Validation__alert">{userAlert}</span>
+            <input
+              type="text"
+              placeholder="Full Name"
+              onChange={handleInputChange}
+              name="user_name"
+              className={errors.user_name ? "error-field" : ""}
+            />
+            <span className="error">{errors.user_name}</span>
 
-          <input
-            type="text"
-            placeholder="Email"
-            onChange={handleInputChange}
-            name="user_email"
-            className={errors.user_email ? "error-field" : ""}
-          />
-          <span className="error">{errors.user_email}</span>
+            <input
+              type="text"
+              placeholder="Email"
+              onChange={handleInputChange}
+              name="user_email"
+              className={errors.user_email ? "error-field" : ""}
+            />
+            <span className="error">{errors.user_email}</span>
 
-          <textarea
-            cols="30"
-            rows="10"
-            placeholder="Your Message"
-            name="message"
-            onChange={handleInputChange}
-            className={errors.message ? "error-field" : ""}
-          />
-          <span className="error">{errors.message}</span>
-          <ReCAPTCHA
-            sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
-            onChange={(response) => handleVerification(response)}
-          />
-          <button className="submit__btn" type="submit" value="send">
-            Submit
-          </button>
-        </form>
+            <textarea
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+              name="message"
+              onChange={handleInputChange}
+              className={errors.message ? "error-field" : ""}
+            />
+            <span className="error">{errors.message}</span>
+            <ReCAPTCHA
+              sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
+              onChange={(response) => handleVerification(response)}
+            />
+            <button className="submit__btn" type="submit" value="send">
+              Submit
+            </button>
+          </form>
+        )}
       </div>
     </div>
   );
