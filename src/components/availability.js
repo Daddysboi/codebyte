@@ -6,24 +6,30 @@ const Availability = () => {
     <div id="availability">
       <div className="availability__subheader__container">
         <div className="line__in"></div>
-        <h2 className="availability__subheader">LOCATION</h2>
+        <h2 className="availability__subheader">GET TO KNOW ME</h2>
         <div className="line__out"></div>
       </div>
 
       <h1 className="availability__header">
-        <span>Availability </span>{" "}
+        <span>Professional Summary </span>{" "}
       </h1>
       <p className="availability__description">
-        .....available to work physically and remotely in any part of the world
+        .....read about me and my availability below
       </p>
       <div className="my__availability">
         <img src={world} alt="upwork" />
         <div>
           <p>
-            Prepared to commit and add value to your project or organisation,
-            both on-site or remotely. As your vision resonates globally, lets
-            join forces to create without boundaries and transform possibilities
-            to achievements
+            With over 2 years of experience as a Frontend Engineer, I excel in
+            crafting and implementing scalable solutions for enterprise-level
+            projects. My expertise lies in developing intricate web applications
+            and platforms across a range of industries, including finance,
+            marketing, sales, and productivity. I am committed to fostering
+            collaboration and prioritizing customer satisfaction, I continuously
+            seek opportunities for learning and improvement. My current
+            objective is to join a dynamic organization dedicated to growth and
+            diversity, where I can contribute my skills to serve a broad
+            spectrum of individuals.
           </p>
           <button
             onClick={() => {

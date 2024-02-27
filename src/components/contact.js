@@ -12,6 +12,7 @@ import emailjs from "@emailjs/browser";
 import { faCheck, faTimes } from "@fortawesome/free-solid-svg-icons";
 import ReCAPTCHA from "react-google-recaptcha";
 import axios from "axios";
+// import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -29,35 +30,35 @@ const Contact = () => {
   const [isVerified, setVerified] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      setIsLoading(true);
-      try {
-        const response = await axios.post("/.netlify/functions/api", {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     setIsLoading(true);
+  //     try {
+  //       const response = await axios.post("/.netlify/functions/api", {
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //       });
 
-        if (!response.ok) {
-          throw new Error(`API request failed with status ${response.status}`);
-        }
+  //       if (!response.ok) {
+  //         throw new Error(`API request failed with status ${response.status}`);
+  //       }
 
-        const result = await response.json();
-        console.log(result);
-        // Handle the result as needed
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
+  //       const result = await response.json();
+  //       console.log(result);
+  //       // Handle the result as needed
+  //     } catch (error) {
+  //       console.error("Error fetching data:", error);
+  //     }
+  //   };
 
-    fetchData();
-  }, [formData]);
-  const handleVerification = (response) => {
-    if (response) {
-      setVerified(true);
-    }
-  };
+  //   fetchData();
+  // }, [formData]);
+  // const handleVerification = (response) => {
+  //   if (response) {
+  //     setVerified(true);
+  //   }
+  // };
 
   const validateForm = () => {
     let isValid = true;
@@ -186,7 +187,7 @@ const Contact = () => {
             >
               <FontAwesomeIcon icon={faWhatsapp} style={{ color: "#25D366" }} />
             </a>{" "}
-            +234-812-068-5697
+            +234-803-157-4374
           </p>
           <div className="contact__container">
             <a

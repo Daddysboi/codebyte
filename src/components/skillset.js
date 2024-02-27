@@ -92,7 +92,6 @@ const Skillset = () => {
               Frameworks/Libraries: React.js, Styles Components, SASS,
               Bootstrap, Tailwind
             </li>
-            <li>Next.js for Server-Side Rendering (SSR) </li>
             <li>Version Control: Git/GitHub</li>
             <li>
               Responsive Design: Cross-browser compatibility, Mobile-first
@@ -102,10 +101,7 @@ const Skillset = () => {
               Web Performance Optimization: Efficient code splitting, Lazy
               loading of assets, Minification and compression techniques
             </li>
-            <li>API Integration: RESTful APIs, GraphQL</li>
-            <li>Package Managers: npm</li>
-            <li>Build Tools: Webpack</li>
-            <li>Testing: Unit testing with Jest, Integration testing</li>
+            <li>API Integration: RESTful APIs</li>
             <li>Code Quality: ESLint, Prettier</li>
             <li>
               Other Skills: Figma and UI/UX principles, Web accessibility

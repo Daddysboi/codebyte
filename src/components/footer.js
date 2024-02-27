@@ -23,7 +23,7 @@ const Footer = () => {
           <a href="https://wa.me/2348120685697" target="_blank">
             <FontAwesomeIcon icon={faWhatsapp} style={{ color: "#25D366" }} />
           </a>{" "}
-          +234-812-068-5697
+          +234-803-157-4374
         </p>
         <div className="contact__container">
           <a
