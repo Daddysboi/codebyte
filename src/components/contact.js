@@ -26,34 +26,10 @@ const Contact = () => {
     message: "",
   });
   const [userAlert, setUserAlert] = useState("");
-  const form = useRef();
   const [isVerified, setVerified] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     setIsLoading(true);
-  //     try {
-  //       const response = await axios.post("/.netlify/functions/api", {
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //       });
-
-  //       if (!response.ok) {
-  //         throw new Error(`API request failed with status ${response.status}`);
-  //       }
-
-  //       const result = await response.json();
-  //       console.log(result);
-  //       // Handle the result as needed
-  //     } catch (error) {
-  //       console.error("Error fetching data:", error);
-  //     }
-  //   };
-
-  //   fetchData();
-  // }, [formData]);
+  const form = useRef();
 
   const handleVerification = (response) => {
     if (response) {

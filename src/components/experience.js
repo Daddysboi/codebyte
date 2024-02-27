@@ -12,8 +12,8 @@ const Experience = () => {
         <div className="line__out"></div>
       </div>
 
-      <h1 className="experience__header">
-        <span data-aos="fade-up">Experience</span>
+      <h1 data-aos="fade-up" className="experience__header">
+        <span>Experience</span>
       </h1>
       <p className="experience__description">
         .....delivered high quality projects on A list platforms
