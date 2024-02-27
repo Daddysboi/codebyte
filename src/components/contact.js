@@ -54,11 +54,12 @@ const Contact = () => {
 
   //   fetchData();
   // }, [formData]);
-  // const handleVerification = (response) => {
-  //   if (response) {
-  //     setVerified(true);
-  //   }
-  // };
+
+  const handleVerification = (response) => {
+    if (response) {
+      setVerified(true);
+    }
+  };
 
   const validateForm = () => {
     let isValid = true;
