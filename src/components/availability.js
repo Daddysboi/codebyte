@@ -10,7 +10,7 @@ const Availability = () => {
         <div className="line__out"></div>
       </div>
 
-      <h1 className="availability__header">
+      <h1 data-aos="fade-up" className="availability__header">
         <span>Professional Summary </span>{" "}
       </h1>
       <p className="availability__description">

@@ -168,7 +168,7 @@ const Contact = () => {
         </div>
 
         <h1 className="form__header">
-          <span>Contact Me</span>
+          <span data-aos="fade-up">Contact Me</span>
         </h1>
         <p className="form__description">
           .....Please, leave me a message on work opportunities

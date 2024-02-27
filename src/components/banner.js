@@ -1,7 +1,7 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faExplosion } from "@fortawesome/free-solid-svg-icons";
 import Temitope_Yusuf_Cv from "../assets/files/Temitope Yusuf.pdf";
+import Aos from "aos";
 
 const Banner = () => {
   return (
@@ -13,7 +13,7 @@ const Banner = () => {
           </div>
           Update: Working on web5 Apps
         </button>
-        <h1 className="banner__header">
+        <h1 data-aos="fade-down" className="banner__header">
           Get a<span> world class</span> <br />
           developer on your team
         </h1>

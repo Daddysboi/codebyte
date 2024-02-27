@@ -13,7 +13,7 @@ const Experience = () => {
       </div>
 
       <h1 className="experience__header">
-        <span>Experience</span>
+        <span data-aos="fade-up">Experience</span>
       </h1>
       <p className="experience__description">
         .....delivered high quality projects on A list platforms

@@ -72,7 +72,7 @@ const Testimony = () => {
         </div>
 
         <h1 className="testimony__header">
-          <span>TESTIMONIES</span>
+          <span data-aos="fade-up">TESTIMONIES</span>
         </h1>
         <p className="testimony__description">
           .....hear what people are saying

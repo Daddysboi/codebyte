@@ -27,7 +27,7 @@ const Skillset = () => {
       </div>
 
       <h1 className="skillset__header">
-        <span>Skillset</span>
+        <span data-aos="fade-up">Skillset</span>
       </h1>
       <p className="skillset__description">
         .....well vast across diverse modern technologies and development tools
