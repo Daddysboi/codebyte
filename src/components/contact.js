@@ -6,13 +6,12 @@ import {
   faTwitter,
   faInstagram,
   faWhatsapp,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "@emailjs/browser";
 import { faCheck, faTimes } from "@fortawesome/free-solid-svg-icons";
 import ReCAPTCHA from "react-google-recaptcha";
-import axios from "axios";
-// import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -152,7 +151,7 @@ const Contact = () => {
         <div className="contact__links">
           <div className="contact__header__container">
             <img src={logo} alt="logo" className="logo" />
-            <h1 className="contact__header">CodeBytes</h1>
+            <h1 className="contact__header">Temitope Yusuf</h1>
           </div>
           <p className="contact__description">The No. 1 developer online</p>
           <p className="contact__description">
@@ -197,6 +196,13 @@ const Contact = () => {
               target="_blank"
             >
               <FontAwesomeIcon icon={faEnvelope} style={{ color: "#EA4335" }} />
+            </a>
+            <a
+              href="mailto:temitopeahmedyusuf@gmail.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faLinkedin} style={{ color: "blue" }} />
             </a>
           </div>
         </div>

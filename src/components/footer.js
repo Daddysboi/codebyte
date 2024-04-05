@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="contact__links__2">
         <div className="contact__header__container">
           <img src={logo} alt="logo" className="logo" />
-          <h1 className="contact__header">CodeBytes</h1>
+          <h1 className="contact__header">Temitope Yusuf</h1>
         </div>
         <p className="contact__description">The No. 1 developer online</p>
         <p className="contact__description">

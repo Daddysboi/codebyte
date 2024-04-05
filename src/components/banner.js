@@ -29,7 +29,7 @@ const Banner = () => {
                 .scrollIntoView({ behavior: "smooth" });
             }}
           >
-            Hire Now
+            Contact Me
           </button>
           <a href={Temitope_Yusuf_Cv} download="Temitope_Yusuf_Cv">
             <button className="button-hire-right">

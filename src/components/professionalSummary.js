@@ -1,7 +1,7 @@
 import React from "react";
 import world from "../assets/images/world.png";
 
-const Availability = () => {
+const ProfessionalSummary = () => {
   return (
     <div id="availability">
       <div className="availability__subheader__container">
@@ -20,16 +20,16 @@ const Availability = () => {
         <img src={world} alt="upwork" />
         <div>
           <p>
-            With over 2 years of experience as a Frontend Engineer, I excel in
-            crafting and implementing scalable solutions for enterprise-level
-            projects. My expertise lies in developing intricate web applications
-            and platforms across a range of industries, including finance,
-            marketing, sales, and productivity. I am committed to fostering
-            collaboration and prioritizing customer satisfaction, I continuously
-            seek opportunities for learning and improvement. My current
-            objective is to join a dynamic organization dedicated to growth and
-            diversity, where I can contribute my skills to serve a broad
-            spectrum of individuals.
+            I am Temitope Yusuf, and with over 2 years of experience as a
+            Frontend Engineer, I excel in crafting and implementing scalable
+            solutions for enterprise-level projects. My expertise lies in
+            developing both frontend and backend web applications and i can as
+            well be refered to as a Fullstack developer. I am committed to
+            fostering collaboration and prioritizing customer satisfaction, as i
+            continuously seek opportunities for learning and improvement. My
+            current objective is to join a dynamic organization dedicated to
+            growth and diversity, where I can contribute my skills to serve a
+            broad spectrum of individuals.
           </p>
           <button
             onClick={() => {
@@ -38,7 +38,7 @@ const Availability = () => {
                 .scrollIntoView({ behavior: "smooth" });
             }}
           >
-            Hire Me
+            Contact Me
           </button>
         </div>
       </div>
@@ -46,4 +46,4 @@ const Availability = () => {
   );
 };
 
-export default Availability;
+export default ProfessionalSummary;
