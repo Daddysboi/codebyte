@@ -10,7 +10,13 @@ const ProfessionalSummary = () => {
         <div className="line__out"></div>
       </div>
 
-      <h1 data-aos="fade-up" className="availability__header">
+      <h1
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-delay="500"
+        data-aos-offset="200"
+        className="availability__header"
+      >
         <span>Professional Summary </span>{" "}
       </h1>
       <p className="availability__description">

@@ -6,10 +6,8 @@ import react from "../assets/images/react.png";
 import javascript from "../assets/images/javascript.png";
 import tailwind from "../assets/images/tailwind.png";
 import typescript from "../assets/images/typescript.png";
-import sass from "../assets/images/sass.png";
 import git from "../assets/images/git.png";
 import wordpress from "../assets/images/wordpress.png";
-import sql from "../assets/images/sql.png";
 import figma from "../assets/images/figma.png";
 import mongoDb from "../assets/images/mongo-db.png";
 import expressjs from "../assets/images/expressjs.png";
@@ -30,7 +28,13 @@ const Skillset = () => {
         <div className="line__out"></div>
       </div>
 
-      <h1 data-aos="fade-up" className="skillset__header">
+      <h1
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="500"
+        data-aos-offset="400"
+        className="skillset__header"
+      >
         <span>Skillset</span>
       </h1>
       <p className="skillset__description">
