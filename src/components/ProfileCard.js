@@ -36,6 +36,7 @@ const Header = styled.p`
   font-weight: 500;
   padding-bottom: 1rem;
   text-align: center;
+  color: #fff;
 `;
 
 const Paragraph = styled.p`
@@ -47,6 +48,11 @@ const Ul = styled.ul`
   list-style-type: none;
 `;
 
+const Key = styled.p`
+  color: #fff;
+  display: inline;
+  padding-right: 0.3rem;
+`;
 const Li = styled.li`
   text-decoration: none;
   font-size: 0.65rem;
@@ -85,9 +91,10 @@ const ProfileCard = ({ img, href, name, tools, text }) => {
         <Header>{name}</Header>
         <Paragraph>{text}</Paragraph>
         <Ul>
-          {tools?.map(({ key, value }, i) => (
-            <Li key={i}>
-              {key}: {value[i]}
+          {tools.map((tool, index) => (
+            <Li key={index}>
+              <Key>{tool.key}: </Key>
+              {tool.value.filter(Boolean).join(", ")}
             </Li>
           ))}
         </Ul>
