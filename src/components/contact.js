@@ -145,8 +145,8 @@ const Contact = () => {
         <h1 className="form__header">
           <span
             data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-delay="500"
+            data-aos-duration="500"
+            data-aos-delay="300"
             data-aos-offset="400"
           >
             Contact Me

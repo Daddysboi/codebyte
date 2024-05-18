@@ -13,7 +13,7 @@ const ProfessionalSummary = () => {
       <h1
         data-aos="fade-up"
         data-aos-duration="600"
-        data-aos-delay="500"
+        data-aos-delay="300"
         data-aos-offset="200"
         className="availability__header"
       >

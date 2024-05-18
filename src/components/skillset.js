@@ -30,9 +30,9 @@ const Skillset = () => {
 
       <h1
         data-aos="fade-up"
-        data-aos-duration="1500"
-        data-aos-delay="500"
-        data-aos-offset="400"
+        data-aos-duration="500"
+        data-aos-delay="300"
+        data-aos-offset="200"
         className="skillset__header"
       >
         <span>Skillset</span>
