@@ -3,7 +3,7 @@ import ProfileCard from "./ProfileCard";
 
 import settL from "../assets/images/SettL.png";
 import bloom from "../assets/images/bloom.png";
-import maids from "../assets/images/maids-cc.png";
+import AndreArmani from "../assets/images/AndreArmani.png";
 
 const projects = [
   {
@@ -33,17 +33,17 @@ const projects = [
     text: "With Bloom, you can rent now and pay later. Our innovative platform offers flexible payment options that cater to your financial needs. Say goodbye to the stress of upfront rent payments and hello to a more convenient renting experience. Try bloom today and grow your finance",
   },
   {
-    img: maids,
-    href: "https://maids-cc.vercel.app/",
-    name: "Maids.cc",
+    img: AndreArmani,
+    href: "https://andre-armani.vercel.app",
+    name: "Andre Armani",
     tools: [
-      { key: "Frontend", value: ["React Vite"] },
-      { key: "Backend", value: ["Nodejs", "Express", "MongoDB"] },
-      { key: "State Management", value: ["Redux Toolkit"] },
+      { key: "Frontend", value: ["React", "Typescript"] },
+      { key: "Backend", value: ["supabase"] },
+      { key: "CMS", value: ["Sanity"] },
       { key: "Forms", value: ["Formik"] },
-      { key: "CSS", value: ["Styled Components"] },
+      { key: "CSS", value: ["tailwind css"] },
     ],
-    text: "A demo of  platform for securing maids and processing visa for clients maids to come stay with them in Dubai. I was asked to build this for the platform so i played around with the project, implementing certain dashboard features",
+    text: "This is an e-commerce web application built for Andre Armani, an artist who sells artistic creations like art drawings and custom wears. The website is developed using the following technologies. Users can browse and explore a wide range of artistic products, including art drawings.",
   },
 ];
 const project = () => {
