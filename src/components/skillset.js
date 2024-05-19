@@ -77,7 +77,7 @@ const Skillset = () => {
             }`}
             onClick={() => openTab("data__analyst")}
           >
-            DATA ANALYTICS
+            MOBILE DEV
           </p>
           <p
             className={`tab__links ${
@@ -94,11 +94,12 @@ const Skillset = () => {
           }`}
         >
           <ul>
-            <li>Languages: HTML, CSS3, JavaScript (ES6+)</li>
             <li>
-              Frameworks/Libraries: React.js, Nextjs, Redux, Styles Components,
-              SASS, Bootstrap, Tailwind
+              Frameworks/Libraries: React.js, Nextjs, Redux, Styled-Components,
+              SASS, Tailwind, Typescript, SASS, Bootstrap, Tailwind
             </li>
+            <li>State management: Redux. Context API </li>
+            <li>Languages: HTML, CSS3, JavaScript (ES6+)</li>
             <li>CMS: Wordpress</li>
             <li>Version Control: Git/GitHub</li>
             <li>
@@ -110,7 +111,6 @@ const Skillset = () => {
               loading of assets, Minification and compression techniques
             </li>
             <li>API Integration: RESTful APIs</li>
-            <li>Code Quality: ESLint, Prettier</li>
             <li>
               Other Skills: Figma and UI/UX principles, Web accessibility
               (WCAG), Progressive Web App (PWA) development
@@ -136,17 +136,13 @@ const Skillset = () => {
           }`}
         >
           <ul>
-            <li>Excel/MS Office/Google Analytics</li>
-            <li>Power BI: Expertise in data modeling, & publishing.</li>
-            <li>HubSpot: lead management, & sales tracking,</li>
-            <li>
-              Data Analytics: Strong data visualization, pattern recognition,
-              and storytelling
-            </li>
-            <li>SQL: querying, and managing relational databases</li>
-            <li>
-              R: Proficiency in statistical computing, analysis, & modeling.
-            </li>
+            <li>React Native</li>
+            <li>Platforms: iOS, Android</li>
+            <li>State Management: Redux, Context API,</li>
+            <li>Development Tools: Xcode Visual Studio, Android Studio</li>
+            <li>Cross-Platform Development: Expo</li>
+            <li>Deployment: App Store, Google Play</li>
+            <li>Other Skills: Push Notifications, Offline Storage, Firebase</li>
           </ul>
         </div>
         <div
