@@ -255,6 +255,10 @@ body::-webkit-scrollbar {
     display: none;
   }
 }
+body {
+  overflow-x: hidden;
+}
+
 #banner {
   background-image: url(../assets/images/banner.png);
   background-size: cover;
@@ -298,6 +302,7 @@ body::-webkit-scrollbar {
   letter-spacing: 0.24px;
   font-size: 4rem;
   color: #a0a6b6;
+  margin-inline: auto;
 }
 #banner .banner__header span {
   background-image: linear-gradient(to right, #EAF7FF, #5BC2FF, #8E6CF9);
@@ -596,6 +601,7 @@ body::-webkit-scrollbar {
   gap: 3rem;
   justify-content: center;
   flex-wrap: wrap;
+  margin-inline: 2rem;
 }
 
 #skillset {
@@ -1253,6 +1259,17 @@ body::-webkit-scrollbar {
     line-height: 3rem;
     letter-spacing: 0.24px;
     font-size: 3rem;
+  }
+  #availability .my__availability__paragraph {
+    width: 40rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    line-height: 2rem;
+    letter-spacing: 0.12px;
+    font-size: 1.22rem;
+    margin-bottom: 2rem;
+    max-width: 32rem;
+    margin-right: 2rem;
   }
   #contact__form {
     flex-wrap: wrap;

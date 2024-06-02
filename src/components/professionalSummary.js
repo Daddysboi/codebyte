@@ -10,22 +10,18 @@ const ProfessionalSummary = () => {
         <div className="line__out"></div>
       </div>
 
-      <h1
-        data-aos="fade-up"
-        data-aos-duration="600"
-        data-aos-delay="300"
-        data-aos-offset="200"
-        className="availability__header"
-      >
-        <span>Professional Summary </span>{" "}
-      </h1>
-      <p className="availability__description">
-        .....read about me and my availability below
-      </p>
+      <div data-aos="fade-up">
+        <h1 data-aos="fade-up" className="availability__header">
+          <span>Professional Summary </span>{" "}
+        </h1>
+        <p className="availability__description">
+          .....read about me and my availability below
+        </p>
+      </div>
       <div className="my__availability">
         <img src={world} alt="upwork" />
         <div>
-          <p>
+          <p className="my__availability__paragraph">
             I am Temitope Yusuf, and with over 2 years of experience as a
             Frontend Engineer, I excel in crafting and implementing scalable
             solutions for enterprise-level projects. My expertise lies in

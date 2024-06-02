@@ -28,18 +28,15 @@ const Skillset = () => {
         <div className="line__out"></div>
       </div>
 
-      <h1
-        data-aos="fade-up"
-        data-aos-duration="500"
-        data-aos-delay="300"
-        data-aos-offset="200"
-        className="skillset__header"
-      >
-        <span>Skillset</span>
-      </h1>
-      <p className="skillset__description">
-        .....well vast across diverse modern technologies and development tools
-      </p>
+      <div data-aos="fade-up">
+        <h1 className="skillset__header">
+          <span>Skillset</span>
+        </h1>
+        <p className="skillset__description">
+          .....well vast across diverse modern technologies and development
+          tools
+        </p>
+      </div>
       <div className="my__skillset">
         <div>
           <img src={javascript} alt="js" />

@@ -27,7 +27,7 @@ const Testimony = () => {
     autoplay: true,
     arrows: false,
     speed: 15000,
-    autoplaySpeed: 15000,
+    autoplaySpeed: 100,
     cssEase: "linear",
     responsive: [
       {
@@ -71,18 +71,14 @@ const Testimony = () => {
           <div className="line__out"></div>
         </div>
 
-        <h1
-          data-aos="fade-up"
-          data-aos-duration="500"
-          data-aos-delay="300"
-          data-aos-offset="200"
-          className="testimony__header"
-        >
-          <span>TESTIMONIES</span>
-        </h1>
-        <p className="testimony__description">
-          .....hear what people are saying
-        </p>
+        <div data-aos="fade-up">
+          <h1 className="testimony__header">
+            <span>TESTIMONIES</span>
+          </h1>
+          <p className="testimony__description">
+            .....hear what people are saying
+          </p>
+        </div>
       </div>
       <div className="testimonial__carousel__container">
         <Slider {...settings}>

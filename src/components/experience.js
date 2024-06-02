@@ -12,15 +12,15 @@ const Experience = () => {
         <div className="line__out"></div>
       </div>
 
-      <h1  data-aos="fade-up"
-      data-aos-duration="500"
-      data-aos-delay="300"
-      data-aos-offset="200" className="experience__header">
-        <span>Experience</span>
-      </h1>
-      <p className="experience__description">
-        .....delivered high quality projects on A list platforms
-      </p>
+      <div data-aos="fade-up">
+        <h1 className="experience__header">
+          <span>Experience</span>
+        </h1>
+        <p className="experience__description">
+          .....delivered high quality projects on A list platforms
+        </p>
+      </div>
+
       <div className="my__experiences">
         <img className="fiverr" src={fiverr} alt="fiverr" />
         <img src={upwork} alt="upwork" />

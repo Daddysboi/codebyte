@@ -55,18 +55,14 @@ const project = () => {
         <div className="line__out"></div>
       </div>
 
-      <h1
-        data-aos="fade-up"
-        data-aos-duration="500"
-        data-aos-delay="300"
-        data-aos-offset="200"
-        className="project__header"
-      >
-        <span>Projects</span>
-      </h1>
-      <p className="project__description">
-        ..... checkout a few of my projects
-      </p>
+      <div data-aos="fade-up">
+        <h1 className="project__header">
+          <span>Projects</span>
+        </h1>
+        <p className="project__description">
+          ..... checkout a few of my projects
+        </p>
+      </div>
       <div className="my__projects">
         {projects.map((project, i) => (
           <ProfileCard

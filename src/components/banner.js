@@ -5,20 +5,14 @@ import Temitope_Yusuf_Cv from "../assets/files/Temitope Yusuf.pdf";
 const Banner = () => {
   return (
     <div id="banner">
-      <div>
+      <div data-aos="fade-down" data-aos-delay="1500" data-aos-offset="200">
         <button className="banner__welcome__btn">
           <div>
             <FontAwesomeIcon className="icon" icon={faExplosion} />
           </div>
           Update: Working on web5 Apps
         </button>
-        <h1
-          data-aos="fade-down"
-          data-aos-duration="1000"
-          data-aos-delay="1500"
-          data-aos-offset="200"
-          className="banner__header"
-        >
+        <h1 className="banner__header">
           Get a<span> world class</span> <br />
           developer on your team
         </h1>

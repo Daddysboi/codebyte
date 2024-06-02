@@ -3,6 +3,10 @@
 @use '../base' as *;
 @use '../components' as *;
 
+body{
+overflow-x: hidden;
+}
+
 #banner {
   background-image: url(../assets/images/banner.png);
   background-size: cover;
@@ -50,6 +54,7 @@
     letter-spacing: 0.24px;
     font-size: 4rem;
     color: #a0a6b6;
+    margin-inline: auto;
 
     span {
       background-image: linear-gradient(to right, #EAF7FF, #5BC2FF, #8E6CF9);
@@ -436,6 +441,7 @@
    gap: 3rem;
    justify-content: center;
    flex-wrap: wrap;
+   margin-inline: 2rem;
   }
 }
 
@@ -1358,6 +1364,40 @@
   }
   
 
+  
+
+
+
+
+
+
+
+
+
+
+
+  #availability {
+  
+ 
+  
+   
+   
+      .my__availability__paragraph {
+        width: 40rem;
+        font-family: $primary-font;
+        font-weight: 300;
+        line-height: 2rem;
+        letter-spacing: 0.12px;
+        font-size: 1.22rem;
+        margin-bottom: 2rem;
+      max-width: 32rem;
+      margin-right:2rem;
+
+      }
+  
+      
+    }
+  
 
 
 
@@ -1443,10 +1483,6 @@
     }
   }
 }
-
-
-
-
 
 }
 
