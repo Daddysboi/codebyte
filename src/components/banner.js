@@ -1,53 +1,66 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload, faExplosion } from "@fortawesome/free-solid-svg-icons";
+import { faDownload, faExplosion, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Temitope_Yusuf_Cv from "../assets/files/Temitope Yusuf.pdf";
 
 const Banner = () => {
   return (
-    <div id="banner">
-      <div data-aos="fade-down" data-aos-delay="1500" data-aos-offset="200">
-        <button className="banner__welcome__btn">
-          <div>
-            <FontAwesomeIcon className="icon" icon={faExplosion} />
-          </div>
-          Update: Working on web5 Apps
-        </button>
-        <h1 className="banner__header">
-          Get a<span> world class</span> <br />
-          developer on your team
-        </h1>
-        <p className="banner__description">
-          ...Innovate, illuminate, inspire, the future starts with a good dev
-        </p>
-        <div className="button-container">
-          <button
-            className="button-hire-left"
-            onClick={() => {
-              document
-                .getElementById("contact__form")
-                .scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Contact Me
+      <div id="banner" className="banner-container">
+        <div className="banner-content" data-aos="fade-down" data-aos-delay="1500" data-aos-offset="200">
+          <button className="banner__welcome__btn pulse">
+            <div>
+              <FontAwesomeIcon className="icon" icon={faExplosion} />
+            </div>
+            Update: Working on web5 Apps
           </button>
-          <a href={Temitope_Yusuf_Cv} download="Temitope_Yusuf_Cv">
-            <button className="button-hire-right">
-              MY CV
-              <FontAwesomeIcon className="download__icon" icon={faDownload} />
+
+          <h1 className="banner__header">
+            Get a <span className="gradient-text">world class</span> developer
+            <br />
+            on your team
+          </h1>
+
+          <p className="banner__description">
+            Innovate, illuminate, inspire — the future starts with a good dev
+          </p>
+
+          <div className="button-container">
+            <button
+                className="button-primary"
+                onClick={() => {
+                  document
+                      .getElementById("contact__form")
+                      .scrollIntoView({ behavior: "smooth" });
+                }}
+            >
+              Contact Me
+              <FontAwesomeIcon icon={faArrowRight} className="btn-icon" />
             </button>
-          </a>
-        </div>
-        <div className="banner__rating">
-          <p className="review__star">4.99</p>
-          <div className="review__tip">
-            <p className="stars">&#9733;&#9733;&#9733;&#9733;&#9733; </p>
-            <p className="review__desc">
-              reviews on<span> Fiverr</span>
-            </p>
+
+            <a href={Temitope_Yusuf_Cv} download="Temitope_Yusuf_Cv">
+              <button className="button-secondary">
+                Download CV
+                <FontAwesomeIcon className="download__icon" icon={faDownload} />
+              </button>
+            </a>
           </div>
+
+          <div className="banner__rating">
+            <div className="rating-badge">
+              <p className="review__star">4.99</p>
+            </div>
+            <div className="review__tip">
+              <p className="stars">★★★★★</p>
+              <p className="review__desc">
+                reviews on <span>Fiverr</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="scroll-indicator">
+          <div className="scroll-line"></div>
         </div>
       </div>
-    </div>
   );
 };
 

@@ -1,5 +1,6 @@
 import React from "react";
-import ProfileCard from "./ProfileCard";
+import SectionHeader from "./SectionHeader";
+import ProjectCard from "./ProjectCard";
 
 import settL from "../assets/images/SettL.png";
 import bloom from "../assets/images/bloom.png";
@@ -17,7 +18,7 @@ const projects = [
       { key: "Forms", value: ["Formik"] },
       { key: "CSS", value: ["Styled Components"] },
     ],
-    text: "SettL is a payment platform and an escrow agent, which is a neutral third party responsible for holding and regulating funds involved in a transaction between a buyer and a seller. It’s role is to ensure that both parties fulfill their obligations before releasing the funds.",
+    text: "SettL is a payment platform and an escrow agent, which is a neutral third party responsible for holding and regulating funds involved in a transaction between a buyer and a seller. It's role is to ensure that both parties fulfill their obligations before releasing the funds.",
   },
   {
     img: bloom,
@@ -46,37 +47,47 @@ const projects = [
     text: "This is an e-commerce web application built for Andre Armani, an artist who sells artistic creations like art drawings and custom wears. The website is developed using the following technologies. Users can browse and explore a wide range of artistic products, including art drawings.",
   },
 ];
-const project = () => {
-  return (
-    <div id="project">
-      <div className="project__subheader__container">
-        <div className="line__in"></div>
-        <h2 className="project__subheader">MY WORKS</h2>
-        <div className="line__out"></div>
-      </div>
 
-      <div data-aos="fade-up">
-        <h1 className="project__header">
-          <span>Projects</span>
-        </h1>
-        <p className="project__description">
-          ..... checkout a few of my projects
-        </p>
-      </div>
-      <div className="my__projects">
-        {projects.map((project, i) => (
-          <ProfileCard
-            key={i}
-            img={project.img}
-            href={project.href}
-            name={project.name}
-            tools={project.tools}
-            text={project.text}
+const Projects = () => {
+  return (
+      <section id="projects" className="section-padding">
+        <div className="container">
+          <SectionHeader
+              subheader="MY WORKS"
+              header="Projects"
+              description="Check out a few of my featured projects"
+              gradient="purple"
           />
-        ))}
-      </div>
-    </div>
+
+          <div className="projects-grid">
+            {projects.map((project, i) => (
+                <ProjectCard
+                    key={i}
+                    img={project.img}
+                    href={project.href}
+                    name={project.name}
+                    tools={project.tools}
+                    text={project.text}
+                />
+            ))}
+          </div>
+
+          <div className="projects-cta">
+            <p>Want to see more of my work?</p>
+            <button
+                className="button-primary"
+                onClick={() => {
+                  document
+                      .getElementById("contact__form")
+                      .scrollIntoView({ behavior: "smooth" });
+                }}
+            >
+              Get In Touch
+            </button>
+          </div>
+        </div>
+      </section>
   );
 };
 
-export default project;
+export default Projects;

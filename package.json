@@ -16,7 +16,7 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.16",
-    "axios": "^1.6.5",
+    "axios": "1.11.0",
     "browser-sync": "^2.29.3",
     "clsx": "^2.1.0",
     "concat": "^1.0.3",
@@ -43,6 +43,7 @@
     "sass": "^1.69.7",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.8",
+    "swiper": "^11.2.10",
     "tailwind-merge": "^2.2.2",
     "web-vitals": "^2.1.4"
   },

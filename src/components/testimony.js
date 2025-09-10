@@ -1,114 +1,115 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import testimonialData from "../Data/testimonial.json";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import SectionHeader from "./SectionHeader";
 
-import Slider from "react-slick";
-
-const renderStars = (rating) => {
-  const starCount = Math.round(rating);
-  const stars = [];
-
-  for (let i = 0; i < starCount; i++) {
-    stars.push(<FontAwesomeIcon key={i} icon={faStar} />);
-  }
-
-  return stars;
-};
+// Import Swiper components and styles
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const Testimony = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 2.1,
-    slidesToScroll: 1,
-    autoplay: true,
-    arrows: false,
-    speed: 15000,
-    autoplaySpeed: 100,
-    cssEase: "linear",
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1.2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1.2,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+  const renderStars = (rating) => {
+    const stars = [];
+    for (let i = 0; i < 5; i++) {
+      stars.push(
+          <FontAwesomeIcon
+              key={i}
+              icon={faStar}
+              className={i < rating ? "star filled" : "star"}
+          />
+      );
+    }
+    return stars;
   };
 
-  const secondSettings = {
-    ...settings,
-    rtl: true, // Right-to-Left for reverse direction
+  const swiperParams = {
+    modules: [Navigation, Pagination, Autoplay],
+    spaceBetween: 30,
+    slidesPerView: 1,
+    navigation: true,
+    pagination: {
+      clickable: true,
+      dynamicBullets: true
+    },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+    loop: true,
+    grabCursor: true,
   };
 
   return (
-    <div id="testimony">
-      <div className="testimony__header_section">
-        <div className="testimony__subheader__container">
-          <div className="line__in"></div>
-          <h2 className="testimony__subheader">REVIEWS</h2>
-          <div className="line__out"></div>
-        </div>
+      <section id="testimonials" className="section-padding">
+        <div className="container">
+          <SectionHeader
+              subheader="REVIEWS"
+              header="Testimonials"
+              description="Hear what people are saying about my work"
+              gradient="blue"
+          />
 
-        <div data-aos="fade-up">
-          <h1 className="testimony__header">
-            <span>TESTIMONIES</span>
-          </h1>
-          <p className="testimony__description">
-            .....hear what people are saying
-          </p>
+          <div className="testimonials-swiper-container">
+            <Swiper {...swiperParams} className="testimonials-swiper">
+              {testimonialData.map((testimony, index) => (
+                  <SwiperSlide key={index}>
+                    <div className="testimonial-card">
+                      <div className="testimonial-quote">
+                        <FontAwesomeIcon icon={faQuoteLeft} className="quote-icon" />
+                      </div>
+
+                      <div className="testimonial-rating">
+                        {renderStars(testimony.rating)}
+                      </div>
+
+                      <p className="testimonial-message">"{testimony.message}"</p>
+
+                      <div className="testimonial-author">
+                        <h4 className="testimonial-name">{testimony.name}</h4>
+                        <p className="testimonial-location">{testimony.location}</p>
+                      </div>
+
+                      <div className="testimonial-decoration">
+                        <div className="decoration-dot"></div>
+                        <div className="decoration-dot"></div>
+                        <div className="decoration-dot"></div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+
+          <div className="testimonials-cta">
+            <p>Want to be my next success story?</p>
+            <button
+                className="button-primary"
+                onClick={() => {
+                  document
+                      .getElementById("contact__form")
+                      .scrollIntoView({ behavior: "smooth" });
+                }}
+            >
+              Start a Project
+            </button>
+          </div>
         </div>
-      </div>
-      <div className="testimonial__carousel__container">
-        <Slider {...settings}>
-          {testimonialData.map((testimony, index) => (
-            <div className="testimonial__card" key={index}>
-              <div className="testimonial__rating">
-                {renderStars(testimony.rating)}
-              </div>
-              <p className="testimonial__testimony">{testimony.message}</p>
-              <h1 className="testimonial__testifier">{testimony.name}</h1>
-              <p className="testimonial__location">{testimony.location}</p>
-            </div>
-          ))}
-        </Slider>
-      </div>
-      <div className="testimonial__carousel__container">
-        <Slider {...secondSettings}>
-          {testimonialData.map((testimony, index) => (
-            <div className="testimonial__card" key={index}>
-              <div className="testimonial__rating">
-                {renderStars(testimony.rating)}
-              </div>
-              <p className="testimonial__testimony">{testimony.message}</p>
-              <h1 className="testimonial__testifier">{testimony.name}</h1>
-              <p className="testimonial__location">{testimony.location}</p>
-            </div>
-          ))}
-        </Slider>
-      </div>
-    </div>
+      </section>
   );
 };
 

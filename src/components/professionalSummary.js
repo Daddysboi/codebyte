@@ -1,50 +1,45 @@
 import React from "react";
 import world from "../assets/images/world.png";
+import SectionHeader from "./SectionHeader";
 
 const ProfessionalSummary = () => {
   return (
-    <div id="availability">
-      <div className="availability__subheader__container">
-        <div className="line__in"></div>
-        <h2 className="availability__subheader">GET TO KNOW ME</h2>
-        <div className="line__out"></div>
-      </div>
+      <section id="availability" className="section-padding">
+        <div className="container">
+          <SectionHeader
+              subheader="GET TO KNOW ME"
+              header="Professional Summary"
+              description="Read about me and my availability below"
+              gradient="green"
+          />
 
-      <div data-aos="fade-up">
-        <h1 data-aos="fade-up" className="availability__header">
-          <span>Professional Summary </span>{" "}
-        </h1>
-        <p className="availability__description">
-          .....read about me and my availability below
-        </p>
-      </div>
-      <div className="my__availability">
-        <img src={world} alt="upwork" />
-        <div>
-          <p className="my__availability__paragraph">
-            I am Temitope Yusuf, and with over 2 years of experience as a
-            Frontend Engineer, I excel in crafting and implementing scalable
-            solutions for enterprise-level projects. My expertise lies in
-            developing both frontend and backend web applications and i can as
-            well be refered to as a Fullstack developer. I am committed to
-            fostering collaboration and prioritizing customer satisfaction, as i
-            continuously seek opportunities for learning and improvement. My
-            current objective is to join a dynamic organization dedicated to
-            growth and diversity, where I can contribute my skills to serve a
-            broad spectrum of individuals.
-          </p>
-          <button
-            onClick={() => {
-              document
-                .getElementById("contact__form")
-                .scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Contact Me
-          </button>
+          <div className="availability-content">
+            <div className="availability-image">
+              <img src={world} alt="World map illustration" />
+            </div>
+
+            <div className="availability-text">
+              <p className="summary-text">
+                Experienced software engineer with a proven track record in designing and implementing scalable enterprise solutions. Adept at mentoring junior developers and fostering a collaborative team environment. Possesses strong coding and testing skills, with a commitment to delivering high-quality applications that improve organizational efficiency and productivity. Holds a BSc in Mathematics and is continuously dedicated to learning and exploring emerging technologies to stay at the forefront of the evolving software development landscape.
+              </p>
+
+              <button
+                  className="button-primary"
+                  onClick={() => {
+                    document
+                        .getElementById("contact__form")
+                        .scrollIntoView({ behavior: "smooth" });
+                  }}
+              >
+                Contact Me
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
   );
 };
 
