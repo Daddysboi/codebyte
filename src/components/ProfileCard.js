@@ -13,7 +13,7 @@ const Container = styled.div`
   /* height: 26rem; */
   border: 2px solid #181f33;
   text-align: left;
-  font-family: inter;
+  font-family: inter, serif;
   color: #a0a6b6;
 `;
 

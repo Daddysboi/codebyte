@@ -9,7 +9,6 @@ import {
 import {
     faBars,
     faTimes,
-    faEnvelope,
     faSun,
     faMoon
 } from "@fortawesome/free-solid-svg-icons";
@@ -35,17 +34,29 @@ const Header = () => {
 
     const toggleTheme = () => {
         setIsDarkMode(!isDarkMode);
-        // You can add theme switching logic here
         document.documentElement.setAttribute('data-theme', isDarkMode ? 'light' : 'dark');
     };
 
     const scrollToSection = (sectionId) => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
         setIsMenuOpen(false);
     };
+
+    const navItems = [
+        { name: "Home", id: "banner" },
+        { name: "About", id: "availability" },
+        { name: "Experience", id: "experience" },
+        { name: "Projects", id: "projects" },
+        { name: "Skills", id: "skillset" },
+        { name: "Testimonials", id: "testimonials" },
+        { name: "Contact", id: "contact" },
+    ];
+
+    const socialLinks = [
+        { href: "https://github.com/daddysboi", icon: faGithub, label: "GitHub" },
+        { href: "https://linkedin.com/in/temitope-ahmed-yusuf/", icon: faLinkedin, label: "LinkedIn" },
+        { href: "https://twitter.com/tweetbytems", icon: faTwitter, label: "Twitter" },
+    ];
 
     return (
         <>
@@ -60,41 +71,13 @@ const Header = () => {
 
                     <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
                         <ul className="nav-list">
-                            <li className="nav-item">
-                                <button onClick={() => scrollToSection('banner')} className="nav-link">
-                                    Home
-                                </button>
-                            </li>
-                            <li className="nav-item">
-                                <button onClick={() => scrollToSection('availability')} className="nav-link">
-                                    About
-                                </button>
-                            </li>
-                            <li className="nav-item">
-                                <button onClick={() => scrollToSection('experience')} className="nav-link">
-                                    Experience
-                                </button>
-                            </li>
-                            <li className="nav-item">
-                                <button onClick={() => scrollToSection('projects')} className="nav-link">
-                                    Projects
-                                </button>
-                            </li>
-                            <li className="nav-item">
-                                <button onClick={() => scrollToSection('skillset')} className="nav-link">
-                                    Skills
-                                </button>
-                            </li>
-                            <li className="nav-item">
-                                <button onClick={() => scrollToSection('testimonials')} className="nav-link">
-                                    Testimonials
-                                </button>
-                            </li>
-                            <li className="nav-item">
-                                <button onClick={() => scrollToSection('contact')} className="nav-link">
-                                    Contact
-                                </button>
-                            </li>
+                            {navItems.map((item) => (
+                                <li className="nav-item" key={item.id}>
+                                    <button onClick={() => scrollToSection(item.id)} className="nav-link">
+                                        {item.name}
+                                    </button>
+                                </li>
+                            ))}
                         </ul>
                     </nav>
 
@@ -104,33 +87,18 @@ const Header = () => {
                         </button>
 
                         <div className="social-icons">
-                            <a
-                                href="https://github.com/daddysboi"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="social-icon"
-                                aria-label="GitHub"
-                            >
-                                <FontAwesomeIcon icon={faGithub} />
-                            </a>
-                            <a
-                                href="https://linkedin.com/in/temitope-ahmed-yusuf/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="social-icon"
-                                aria-label="LinkedIn"
-                            >
-                                <FontAwesomeIcon icon={faLinkedin} />
-                            </a>
-                            <a
-                                href="https://twitter.com/tweetbytems"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="social-icon"
-                                aria-label="Twitter"
-                            >
-                                <FontAwesomeIcon icon={faTwitter} />
-                            </a>
+                            {socialLinks.map((link) => (
+                                <a
+                                    key={link.label}
+                                    href={link.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="social-icon"
+                                    aria-label={link.label}
+                                >
+                                    <FontAwesomeIcon icon={link.icon} />
+                                </a>
+                            ))}
                         </div>
 
                         <button

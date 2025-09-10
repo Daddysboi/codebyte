@@ -10,17 +10,17 @@ const Banner = () => {
             <div>
               <FontAwesomeIcon className="icon" icon={faExplosion} />
             </div>
-            Update: Working on web5 Apps
+            Update: Building an AI Model
           </button>
 
           <h1 className="banner__header">
-            Get a <span className="gradient-text">world class</span> developer
+            Get an <span className="gradient-text">Elite</span> developer
             <br />
             on your team
           </h1>
 
           <p className="banner__description">
-            Innovate, illuminate, inspire — the future starts with a good dev
+            Engineering the Future, Together
           </p>
 
           <div className="button-container">

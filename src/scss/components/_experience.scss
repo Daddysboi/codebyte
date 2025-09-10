@@ -1,0 +1,230 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+/* Experience Section Styles */
+#experience {
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+#experience::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+          radial-gradient(circle at 10% 20%, rgba(91, 194, 255, 0.08) 0%, transparent 50%),
+          radial-gradient(circle at 90% 80%, rgba(142, 108, 249, 0.08) 0%, transparent 50%);
+  z-index: 0;
+}
+
+.experience-timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 4rem auto 0;
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2rem;
+  position: relative;
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #5BC2FF 0%, #8E6CF9 100%);
+  border: 3px solid rgba(24, 31, 51, 0.8);
+  box-shadow: 0 0 0 4px rgba(91, 194, 255, 0.2);
+  z-index: 2;
+  position: relative;
+}
+
+.timeline-line {
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #5BC2FF, #8E6CF9);
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+}
+
+.timeline-content {
+  flex: 1;
+  padding-bottom: 2rem;
+}
+
+.experience-card {
+  background: rgba(24, 31, 51, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, #5BC2FF, #8E6CF9);
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.experience-header {
+  margin-bottom: 1.5rem;
+}
+
+.experience-role {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.experience-company {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #5BC2FF;
+  margin-bottom: 0.75rem;
+}
+
+.experience-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #a0a6b6;
+  font-size: 0.9rem;
+}
+
+.meta-separator {
+  color: #5BC2FF;
+}
+
+.experience-responsibilities {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.responsibility-item {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+  color: #a0a6b6;
+  display: flex;
+  align-items: flex-start;
+}
+
+.bullet {
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #5BC2FF;
+  flex-shrink: 0;
+  margin-top: 0.4rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .timeline-marker {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .timeline-dot {
+    margin-right: 1rem;
+  }
+
+  .timeline-line {
+    width: 100%;
+    height: 2px;
+    top: auto;
+    left: 20px;
+    right: 0;
+    background: linear-gradient(to right, #5BC2FF, #8E6CF9);
+  }
+
+  .experience-card {
+    padding: 1.5rem;
+  }
+
+  .experience-role {
+    font-size: 1.2rem;
+  }
+
+  .experience-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .meta-separator {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-card {
+    padding: 1.25rem;
+  }
+
+  .experience-role {
+    font-size: 1.1rem;
+  }
+
+  .responsibility-item {
+    font-size: 0.9rem;
+  }
+}
+
+/* Animation for timeline items */
+.timeline-item {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.timeline-item:nth-child(1) { animation-delay: 0.1s; }
+.timeline-item:nth-child(2) { animation-delay: 0.2s; }
+.timeline-item:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

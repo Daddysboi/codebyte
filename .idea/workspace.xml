@@ -5,32 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e3ee185-5b1a-4217-9fb7-c83d519efe9e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ProjectCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SectionHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/layout/_index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProfileCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProfileCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/banner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/experience.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/experience.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/professionalSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/professionalSummary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/skillset.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/skillset.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/testimony.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/testimony.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/abstracts/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/abstracts/_index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/abstracts/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/abstracts/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/abstracts/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/abstracts/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/base/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/_reset.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/base/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/base/_utilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/_utilities.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_buttons.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/components/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/layout/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/layout/_grid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/pages/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/_home.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +118,7 @@
       <updated>1757504609773</updated>
       <workItem from="1757504611040" duration="3845000" />
       <workItem from="1757533160013" duration="6523000" />
-      <workItem from="1757541084647" duration="1837000" />
+      <workItem from="1757541084647" duration="4906000" />
     </task>
     <servers />
   </component>

@@ -100,8 +100,6 @@ const Skillset = () => {
               </div>
 
               <div className="skills-tab-content">
-                <h3 className="skills-category-title">{skillsData[activeTab].title}</h3>
-
                 <div className="skills-grid">
                   {skillsData[activeTab].skills.map((skillCategory, index) => (
                       <div key={index} className="skill-category">
