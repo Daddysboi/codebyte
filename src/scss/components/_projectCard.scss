@@ -2,11 +2,9 @@
 @use '../base' as *;
 
 .project-card {
-  background: rgba(24, 31, 51, 0.8);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.4s ease;
   position: relative;
 }
@@ -122,9 +120,7 @@
   text-align: center;
   margin-top: 4rem;
   padding: 3rem;
-  background: rgba(24, 31, 51, 0.5);
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .projects-cta p {

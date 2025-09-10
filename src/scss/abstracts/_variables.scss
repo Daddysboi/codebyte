@@ -2,3 +2,11 @@
 
 //colors
 $global-white-color: #FFF;
+
+:root {
+  --primary-gradient: linear-gradient(135deg, #0F4EAD 0%, #093577 100%);
+  --secondary-gradient: linear-gradient(135deg, #5BC2FF 0%, #8E6CF9 100%);
+  --text-gradient: linear-gradient(90deg, #EAF7FF, #5BC2FF, #8E6CF9);
+  --card-bg: rgba(24, 31, 51, 0.8);
+  --glass-effect: rgba(255, 255, 255, 0.05);
+}

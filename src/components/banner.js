@@ -6,7 +6,7 @@ const Banner = () => {
   return (
       <div id="banner" className="banner-container">
         <div className="banner-content" data-aos="fade-down" data-aos-delay="1500" data-aos-offset="200">
-          <button className="banner__welcome__btn pulse">
+          <button className="banner__welcome__btn">
             <div>
               <FontAwesomeIcon className="icon" icon={faExplosion} />
             </div>
@@ -36,7 +36,7 @@ const Banner = () => {
               <FontAwesomeIcon icon={faArrowRight} className="btn-icon" />
             </button>
 
-            <a href={Temitope_Yusuf_Cv} download="Temitope_Yusuf_Cv">
+            <a href={Temitope_Yusuf_Cv} download="Temitope_Yusuf_Cv" className="button-link-wrapper">
               <button className="button-secondary">
                 Download CV
                 <FontAwesomeIcon className="download__icon" icon={faDownload} />
@@ -51,14 +51,10 @@ const Banner = () => {
             <div className="review__tip">
               <p className="stars">★★★★★</p>
               <p className="review__desc">
-                reviews on <span>Fiverr</span>
+                <span>reviews</span>
               </p>
             </div>
           </div>
-        </div>
-
-        <div className="scroll-indicator">
-          <div className="scroll-line"></div>
         </div>
       </div>
   );

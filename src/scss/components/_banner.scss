@@ -1,11 +1,11 @@
 /* Banner Styles */
 #banner {
-  min-height: 100vh;
+  padding: 8rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  
   overflow: hidden;
 
   &::before {
@@ -95,6 +95,7 @@
   display: flex;
   gap: 1rem;
   justify-content: center;
+  align-items: center;
   margin-bottom: 3rem;
   flex-wrap: wrap;
 }
@@ -143,6 +144,11 @@
   }
 }
 
+.button-link-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .btn-icon {
   transition: transform 0.3s ease;
 }
@@ -154,10 +160,10 @@
   gap: 1rem;
   background: var(--glass-effect);
   backdrop-filter: blur(10px);
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   border-radius: 50px;
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 200px;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 

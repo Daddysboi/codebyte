@@ -3,7 +3,7 @@
 
 /* Experience Section Styles */
 #experience {
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  
   position: relative;
   overflow: hidden;
 }
@@ -15,9 +15,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background:
-          radial-gradient(circle at 10% 20%, rgba(91, 194, 255, 0.08) 0%, transparent 50%),
-          radial-gradient(circle at 90% 80%, rgba(142, 108, 249, 0.08) 0%, transparent 50%);
+  
   z-index: 0;
 }
 
@@ -67,11 +65,9 @@
 }
 
 .experience-card {
-  background: rgba(24, 31, 51, 0.8);
   backdrop-filter: blur(10px);
   border-radius: 16px;
   padding: 2.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;

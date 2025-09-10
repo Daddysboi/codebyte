@@ -3,6 +3,14 @@
 @import url("https://fonts.googleapis.com");
 @import url("https://fonts.gstatic.com");
 @import url("@fortawesome/fontawesome-free/css/all.css");
+:root {
+  --primary-gradient: linear-gradient(135deg, #0F4EAD 0%, #093577 100%);
+  --secondary-gradient: linear-gradient(135deg, #5BC2FF 0%, #8E6CF9 100%);
+  --text-gradient: linear-gradient(90deg, #EAF7FF, #5BC2FF, #8E6CF9);
+  --card-bg: rgba(24, 31, 51, 0.8);
+  --glass-effect: rgba(255, 255, 255, 0.05);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +20,7 @@
 }
 
 body {
-  background: #02041d;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   color: #FFF;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -609,12 +617,11 @@ body {
 
 /* Banner Styles */
 #banner {
-  min-height: 100vh;
+  padding: 8rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   overflow: hidden;
 }
 #banner::before {
@@ -700,6 +707,7 @@ body {
   display: flex;
   gap: 1rem;
   justify-content: center;
+  align-items: center;
   margin-bottom: 3rem;
   flex-wrap: wrap;
 }
@@ -745,6 +753,11 @@ body {
   background: rgba(255, 255, 255, 0.1);
 }
 
+.button-link-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .btn-icon {
   transition: transform 0.3s ease;
 }
@@ -756,10 +769,10 @@ body {
   gap: 1rem;
   background: var(--glass-effect);
   backdrop-filter: blur(10px);
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   border-radius: 50px;
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 200px;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -888,7 +901,6 @@ body {
 /* Professional Summary Section Styles */
 #availability {
   padding: 6rem 0;
-  background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 100%);
   position: relative;
   overflow: hidden;
 }
@@ -900,7 +912,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 20% 30%, rgba(92, 194, 255, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(154, 247, 114, 0.1) 0%, transparent 50%);
   z-index: 0;
 }
 
@@ -1087,7 +1098,6 @@ body {
 }
 /* Experience Section Styles */
 #experience {
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   position: relative;
   overflow: hidden;
 }
@@ -1099,7 +1109,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 10% 20%, rgba(91, 194, 255, 0.08) 0%, transparent 50%), radial-gradient(circle at 90% 80%, rgba(142, 108, 249, 0.08) 0%, transparent 50%);
   z-index: 0;
 }
 
@@ -1149,11 +1158,9 @@ body {
 }
 
 .experience-card {
-  background: rgba(24, 31, 51, 0.8);
   backdrop-filter: blur(10px);
   border-radius: 16px;
   padding: 2.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -1309,7 +1316,6 @@ body {
 }
 /* Projects Section Styles */
 #projects {
-  background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 100%);
   position: relative;
   overflow: hidden;
 }
@@ -1321,7 +1327,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 20% 30%, rgba(234, 247, 255, 0.05) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(160, 118, 203, 0.05) 0%, transparent 50%);
   z-index: 0;
 }
 
@@ -1334,7 +1339,6 @@ body {
 
 /* Skillset Section Styles */
 #skillset {
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   position: relative;
   overflow: hidden;
 }
@@ -1346,7 +1350,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 20% 30%, rgba(221, 95, 140, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(115, 118, 255, 0.08) 0%, transparent 50%);
   z-index: 0;
 }
 
@@ -1383,9 +1386,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 1.5rem;
-  background: rgba(24, 31, 51, 0.6);
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -1429,11 +1430,9 @@ body {
 }
 
 .skills-tabs-container {
-  background: rgba(24, 31, 51, 0.8);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .skills-tabs-header {
@@ -1484,10 +1483,8 @@ body {
 }
 
 .skill-category {
-  background: rgba(255, 255, 255, 0.05);
   padding: 1.5rem;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .skill-category-name {
@@ -1619,12 +1616,6 @@ body {
   }
 }
 /* Testimonials Section Styles */
-#testimonials {
-  background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 100%);
-  position: relative;
-  overflow: hidden;
-}
-
 #testimonials::before {
   content: "";
   position: absolute;
@@ -1632,7 +1623,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 20% 30%, rgba(91, 194, 255, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(142, 108, 249, 0.08) 0%, transparent 50%);
   z-index: 0;
 }
 
@@ -1644,11 +1634,9 @@ body {
 }
 
 .testimonial-card {
-  background: rgba(24, 31, 51, 0.8);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 2.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
   overflow: hidden;
   transition: all 0.4s ease;
@@ -1752,9 +1740,7 @@ body {
   text-align: center;
   margin-top: 4rem;
   padding: 3rem;
-  background: rgba(24, 31, 51, 0.5);
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .testimonials-cta p {
@@ -1851,12 +1837,6 @@ body {
 }
 
 /* Testimonials Section Styles */
-#testimonials {
-  background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 100%);
-  position: relative;
-  overflow: hidden;
-}
-
 #testimonials::before {
   content: "";
   position: absolute;
@@ -1864,7 +1844,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 20% 30%, rgba(91, 194, 255, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(142, 108, 249, 0.08) 0%, transparent 50%);
   z-index: 0;
 }
 
@@ -1880,11 +1859,9 @@ body {
 }
 
 .testimonial-card {
-  background: rgba(24, 31, 51, 0.8);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 2.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
   overflow: hidden;
   transition: all 0.4s ease;
@@ -2035,9 +2012,7 @@ body {
   text-align: center;
   margin-top: 2rem;
   padding: 3rem;
-  background: rgba(24, 31, 51, 0.5);
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .testimonials-cta p {
@@ -2120,7 +2095,6 @@ body {
 
 /* Contact Section Styles */
 #contact {
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   position: relative;
   overflow: hidden;
 }
@@ -2132,7 +2106,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 20% 30%, rgba(194, 232, 255, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(154, 247, 114, 0.08) 0%, transparent 50%);
   z-index: 0;
 }
 
@@ -2149,11 +2122,9 @@ body {
 }
 
 .contact-card {
-  background: rgba(24, 31, 51, 0.8);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 2.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   position: sticky;
   top: 2rem;
 }
@@ -2266,11 +2237,9 @@ body {
 }
 
 .form-wrapper {
-  background: rgba(24, 31, 51, 0.8);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 2.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .form-alert {
@@ -2520,11 +2489,9 @@ body {
 }
 
 .project-card {
-  background: rgba(24, 31, 51, 0.8);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.4s ease;
   position: relative;
 }
@@ -2640,9 +2607,7 @@ body {
   text-align: center;
   margin-top: 4rem;
   padding: 3rem;
-  background: rgba(24, 31, 51, 0.5);
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .projects-cta p {
