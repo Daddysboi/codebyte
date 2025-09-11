@@ -310,27 +310,32 @@ body::-webkit-scrollbar {
 .header {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 0; /* Stretch to the left edge */
+  right: 0; /* Stretch to the right edge */
+  width: 90%; /* Responsive width */
+  max-width: 1400px; /* Limit maximum width */
+  margin: 1.5rem auto 0 auto; /* Center horizontally and add top margin */
   z-index: 1000;
-  background: rgba(10, 14, 26, 0.9); /* Reverted background */
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(10, 14, 26, 0.8);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
   transition: all 0.3s ease;
   padding: 1rem 0;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
 .header.scrolled {
-  background: rgba(10, 14, 26, 0.95); /* Reverted background */
-  backdrop-filter: blur(15px);
+  background: rgba(10, 14, 26, 0.9); /* Slightly more opaque when scrolled */
+  backdrop-filter: blur(20px); /* Increased blur when scrolled */
   padding: 0.75rem 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4); /* More pronounced shadow when scrolled */
 }
 
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -569,8 +574,14 @@ body::-webkit-scrollbar {
 
 /* Theme support */
 [data-theme=light] .header {
-  background: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8); /* Light theme background */
+  border: 1px solid rgba(0, 0, 0, 0.15); /* Light theme border */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Light theme shadow */
+}
+
+[data-theme=light] .header.scrolled {
+  background: rgba(255, 255, 255, 0.9); /* Light theme background when scrolled */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2); /* Light theme shadow when scrolled */
 }
 
 [data-theme=light] .nav-link {
