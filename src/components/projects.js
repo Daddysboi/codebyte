@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 
 import settL from "../assets/images/SettL.png";
 import bloom from "../assets/images/bloom.png";
-import AndreArmani from "../assets/images/AndreArmani.png";
+import DAce from "../assets/images/DAce.png";
 
 const projects = [
   {
@@ -34,17 +34,18 @@ const projects = [
     text: "With Bloom, you can rent now and pay later. Our innovative platform offers flexible payment options that cater to your financial needs. Say goodbye to the stress of upfront rent payments and hello to a more convenient renting experience. Try bloom today and grow your finance",
   },
   {
-    img: AndreArmani,
-    href: "https://andre-armani.vercel.app",
-    name: "Andre Armani",
+    img: DAce,
+    href: "https://daceacademy.co.uk/",
+    name: "D Ace Academy",
     tools: [
-      { key: "Frontend", value: ["React", "Typescript"] },
-      { key: "Backend", value: ["supabase"] },
-      { key: "CMS", value: ["Sanity"] },
+      { key: "Frontend", value: ["NextJs", "Typescript"] },
+      { key: "Backend", value: ["ExpressJs"] },
+      { key: "State Management", value: ["Redux"] },
       { key: "Forms", value: ["Formik"] },
       { key: "CSS", value: ["tailwind css"] },
     ],
-    text: "This is an e-commerce web application built for Andre Armani, an artist who sells artistic creations like art drawings and custom wears. The website is developed using the following technologies. Users can browse and explore a wide range of artistic products, including art drawings.",
+    text:
+        "A platform dedicated to empowering International Medical Graduates through elite programs designed to accelerate their success in the UK healthcare system",
   },
 ];
 

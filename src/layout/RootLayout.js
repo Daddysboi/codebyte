@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 
 const RootLayout = () => {
   return (
-    <div>
+    <div className="main-content-wrapper">
       <Header />
       <Outlet />
       <Footer />

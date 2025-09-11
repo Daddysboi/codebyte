@@ -19,7 +19,7 @@ const ProjectCard = ({ img, href, name, tools, text }) => {
                 <div className="project-tools">
                     {tools.map((toolCategory, index) => (
                         <div key={index} className="tool-category">
-                            <div className="tool-label">{toolCategory.key}</div>
+                            {/*<div className="tool-label">{toolCategory.key}</div>*/}
                             <div className="tool-list">
                                 {toolCategory.value.filter(tool => tool.trim()).map((tool, i) => (
                                     <span key={i} className="tool-tag">{tool}</span>

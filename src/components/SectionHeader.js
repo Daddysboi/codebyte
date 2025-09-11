@@ -10,7 +10,7 @@ const SectionHeader = ({ subheader, header, description, gradient = "blue" }) =>
 
     const headerStyle = {
         textAlign: "center",
-        marginBottom: "4rem"
+        marginBottom: "2rem"
     };
 
     const subheaderStyle = {

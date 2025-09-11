@@ -644,8 +644,9 @@ body {
   height: 100%;
   background: url(../assets/images/banner.png) no-repeat center center;
   background-size: cover;
-  opacity: 0.2;
+  opacity: 1;
   z-index: -1;
+  filter: brightness(1.5);
 }
 
 .banner-content {
@@ -911,7 +912,7 @@ body {
 }
 /* Professional Summary Section Styles */
 #availability {
-  padding: 6rem 0;
+  padding: 3rem 0;
   position: relative;
   overflow: hidden;
 }
@@ -2579,10 +2580,10 @@ body {
   text-align: center;
   margin-top: 4rem;
   padding: 3rem;
-  /* Removed background */
+  background: rgba(24, 31, 51, 0.5); /* Re-added background */
   border-radius: 16px;
-  /* Removed border */
-  /* Removed box-shadow */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Re-added border */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Added shadow */
 }
 
 .projects-cta p {
@@ -2725,6 +2726,10 @@ body {
 }
 .profile-card-click-text:visited {
   color: gray;
+}
+
+.main-content-wrapper {
+  padding-top: 10rem;
 }
 
 /*# sourceMappingURL=style.css.map */
