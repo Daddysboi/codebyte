@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="container">
           <div className="footer-bottom">
             <p className="copyright">
-              © {currentYear} CodeBytes. Made with <FontAwesomeIcon icon={faHeart} className="heart-icon" /> by Temitope Yusuf
+              © {currentYear} CodeBytes. By Temitope Yusuf
             </p>
           </div>
         </div>

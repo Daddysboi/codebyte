@@ -94,7 +94,7 @@
 .tool-label {
   font-size: 0.8rem;
   font-weight: 600;
-  color: #8E6CF9;
+  color: #fff; /* Changed to white for better contrast */
   margin-bottom: 0.3rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -108,19 +108,21 @@
 
 .tool-tag {
   padding: 0.3rem 0.8rem;
-  background: rgba(142, 108, 249, 0.1);
-  color: #8E6CF9;
+  color: #8E6CF9; /* Changed back to original color for values */
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 500;
-  border: 1px solid rgba(142, 108, 249, 0.2);
+  border: 1px solid #8E6CF9; /* Border color matches text color for prominence */
 }
 
 .projects-cta {
   text-align: center;
   margin-top: 4rem;
   padding: 3rem;
+  background: rgba(24, 31, 51, 0.8); /* Re-added background */
   border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Re-added border */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Added shadow */
 }
 
 .projects-cta p {

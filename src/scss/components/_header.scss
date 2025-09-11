@@ -8,7 +8,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(10, 14, 26, 0.9);
+  background: transparent; /* Changed to transparent */
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
@@ -16,7 +16,7 @@
 }
 
 .header.scrolled {
-  background: rgba(10, 14, 26, 0.95);
+  background: transparent; /* Changed to transparent */
   backdrop-filter: blur(15px);
   padding: 0.75rem 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -47,8 +47,8 @@
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
+  width: 30px; /* Reduced size */
+  height: 30px; /* Reduced size */
   border-radius: 8px;
   object-fit: cover;
 }
@@ -56,7 +56,7 @@
 .logo-text {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #fff;
+  color: transparent; /* Explicitly set color to transparent */
   background: linear-gradient(90deg, #5BC2FF, #8E6CF9);
   -webkit-background-clip: text;
   background-clip: text;
@@ -81,7 +81,7 @@
   border: none;
   color: #a0a6b6;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.9rem; /* Slightly reduced font size */
   cursor: pointer;
   padding: 0.5rem 0;
   position: relative;
@@ -236,8 +236,8 @@
   }
 
   .logo {
-    width: 35px;
-    height: 35px;
+    width: 25px; /* Reduced responsive size */
+    height: 25px; /* Reduced responsive size */
   }
 
   .logo-text {

@@ -56,7 +56,7 @@ body::before {
 /* Modern CSS with responsive design */
 /* Footer Styles */
 #footer {
-  background: linear-gradient(180deg, #0a0e1a 0%, #090A0F 100%);
+  background: transparent; /* Changed to transparent */
   padding: 4rem 0 2rem;
   position: relative;
   overflow: hidden;
@@ -321,7 +321,7 @@ body::before {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(10, 14, 26, 0.9);
+  background: transparent; /* Changed to transparent */
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
@@ -329,7 +329,7 @@ body::before {
 }
 
 .header.scrolled {
-  background: rgba(10, 14, 26, 0.95);
+  background: transparent; /* Changed to transparent */
   backdrop-filter: blur(15px);
   padding: 0.75rem 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -360,8 +360,8 @@ body::before {
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
+  width: 30px; /* Reduced size */
+  height: 30px; /* Reduced size */
   border-radius: 8px;
   object-fit: cover;
 }
@@ -369,7 +369,7 @@ body::before {
 .logo-text {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #fff;
+  color: transparent; /* Explicitly set color to transparent */
   background: linear-gradient(90deg, #5BC2FF, #8E6CF9);
   -webkit-background-clip: text;
   background-clip: text;
@@ -394,7 +394,7 @@ body::before {
   border: none;
   color: #a0a6b6;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.9rem; /* Slightly reduced font size */
   cursor: pointer;
   padding: 0.5rem 0;
   position: relative;
@@ -541,8 +541,8 @@ body::before {
     padding: 0 1rem;
   }
   .logo {
-    width: 35px;
-    height: 35px;
+    width: 25px; /* Reduced responsive size */
+    height: 25px; /* Reduced responsive size */
   }
   .logo-text {
     font-size: 1.3rem;
@@ -1751,7 +1751,10 @@ body {
   text-align: center;
   margin-top: 4rem;
   padding: 3rem;
+  background: rgba(24, 31, 51, 0.5); /* Re-added background */
   border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Re-added border */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Added shadow */
 }
 
 .testimonials-cta p {
@@ -2023,7 +2026,10 @@ body {
   text-align: center;
   margin-top: 2rem;
   padding: 3rem;
+  background: rgba(24, 31, 51, 0.5); /* Re-added background */
   border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Re-added border */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Added shadow */
 }
 
 .testimonials-cta p {
@@ -2333,7 +2339,7 @@ body {
   padding: 1.2rem 2rem;
   background: linear-gradient(135deg, #0F4EAD 0%, #093577 100%);
   color: white;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Added border */
   border-radius: 12px;
   font-weight: 600;
   font-size: 1rem;
@@ -2414,89 +2420,6 @@ body {
 .form-group input:focus,
 .form-group textarea:focus {
   transform: translateY(-1px);
-}
-
-/* Section Title Styles (reusable) */
-.section-title {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-.section-title .title-decoration {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-.section-title .title-decoration .line {
-  height: 2px;
-  width: 40px;
-  background: var(--secondary-gradient);
-  margin: 0 1rem;
-}
-.section-title .subtitle {
-  color: #5BC2FF;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-}
-.section-title h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  background: var(--text-gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.section-title .description {
-  color: #a0a6b6;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-/* Section Header Styles */
-.section-header {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.section-subheader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
-  color: #5BC2FF;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 0.9rem;
-}
-
-.section-subheader::before,
-.section-subheader::after {
-  content: "";
-  height: 2px;
-  width: 40px;
-  background: linear-gradient(90deg, #C2E8FF, #9AF772);
-  margin: 0 1rem;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  background: linear-gradient(90deg, #C2E8FF, #9AF772);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.section-description {
-  color: #a0a6b6;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
 }
 
 .project-card {
@@ -2592,7 +2515,7 @@ body {
 .tool-label {
   font-size: 0.8rem;
   font-weight: 600;
-  color: #8E6CF9;
+  color: #fff; /* Changed to white for better contrast */
   margin-bottom: 0.3rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -2606,19 +2529,21 @@ body {
 
 .tool-tag {
   padding: 0.3rem 0.8rem;
-  background: rgba(142, 108, 249, 0.1);
-  color: #8E6CF9;
+  color: #8E6CF9; /* Changed back to original color for values */
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 500;
-  border: 1px solid rgba(142, 108, 249, 0.2);
+  border: 1px solid #8E6CF9; /* Border color matches text color for prominence */
 }
 
 .projects-cta {
   text-align: center;
   margin-top: 4rem;
   padding: 3rem;
+  background: rgba(24, 31, 51, 0.8); /* Re-added background */
   border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Re-added border */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Added shadow */
 }
 
 .projects-cta p {
