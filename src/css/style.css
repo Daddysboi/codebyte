@@ -1391,21 +1391,35 @@ body {
 }
 
 .tech-icons-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 1.5rem;
-  max-width: 800px;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  gap: 0.25rem; /* Reduced from 0.5rem to 0.25rem */
+  padding-bottom: 1rem; /* Add some padding for scrollbar if it appears */
+  /* Webkit Scrollbar Styles */
+}
+.tech-icons-grid::-webkit-scrollbar {
+  height: 8px; /* Make scrollbar thinner */
+}
+.tech-icons-grid::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05); /* Subtle track background */
+  border-radius: 10px;
+}
+.tech-icons-grid::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2); /* Darker, subtle thumb */
+  border-radius: 10px;
+}
+.tech-icons-grid::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3); /* Slightly lighter on hover */
 }
 
 .tech-icon-item {
+  flex-shrink: 0; /* Prevent items from shrinking */
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1.5rem;
-  /* Removed background */
   border-radius: 16px;
-  /* Removed border */
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;

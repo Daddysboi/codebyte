@@ -71,12 +71,10 @@ const Skillset = () => {
           <div className="skills-content">
             {/* Tech Stack Icons */}
             <div className="tech-stack">
-              <h3 className="tech-stack-title">Tech Stack</h3>
               <div className="tech-icons-grid">
                 {techIcons.map((tech, index) => (
                     <div key={index} className="tech-icon-item">
                       <img src={tech.src} alt={tech.name} />
-                      <span className="tech-name">{tech.name}</span>
                     </div>
                 ))}
               </div>
