@@ -2,9 +2,11 @@
 @use '../base' as *;
 
 .project-card {
+  /* Removed background */
   backdrop-filter: blur(10px);
   border-radius: 20px;
   overflow: hidden;
+  /* Removed border */
   transition: all 0.4s ease;
   position: relative;
 }
@@ -119,10 +121,10 @@
   text-align: center;
   margin-top: 4rem;
   padding: 3rem;
-  background: rgba(24, 31, 51, 0.8); /* Re-added background */
+  /* Removed background */
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.1); /* Re-added border */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Added shadow */
+  /* Removed border */
+  /* Removed box-shadow */
 }
 
 .projects-cta p {

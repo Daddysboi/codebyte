@@ -15,7 +15,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  
+  /* Removed background */
   z-index: 0;
 }
 
@@ -65,9 +65,11 @@
 }
 
 .experience-card {
+  /* Removed background */
   backdrop-filter: blur(10px);
   border-radius: 16px;
   padding: 2.5rem;
+  /* Removed border */
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;

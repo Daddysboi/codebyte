@@ -8,7 +8,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: transparent; /* Changed to transparent */
+  background: rgba(10, 14, 26, 0.9); /* Reverted background */
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
@@ -16,7 +16,7 @@
 }
 
 .header.scrolled {
-  background: transparent; /* Changed to transparent */
+  background: rgba(10, 14, 26, 0.95); /* Reverted background */
   backdrop-filter: blur(15px);
   padding: 0.75rem 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -56,11 +56,8 @@
 .logo-text {
   font-size: 1.5rem;
   font-weight: 700;
-  color: transparent; /* Explicitly set color to transparent */
-  background: linear-gradient(90deg, #5BC2FF, #8E6CF9);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #fff; /* Changed to white */
+  /* Removed background, background-clip, and text-fill-color */
 }
 
 .nav {

@@ -43,7 +43,6 @@ const Header = () => {
     };
 
     const navItems = [
-        { name: "Home", id: "banner" },
         { name: "About", id: "availability" },
         { name: "Experience", id: "experience" },
         { name: "Projects", id: "projects" },
@@ -65,7 +64,7 @@ const Header = () => {
                     <Link to="/" className="logo-link">
                         <div className="logo-container">
                             <img src={logo} alt="Temitope Yusuf Logo" className="logo" />
-                            <span className="logo-text">Temi</span>
+                            <span className="logo-text">Temitope Yusuf</span>
                         </div>
                     </Link>
 

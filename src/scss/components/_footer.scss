@@ -16,9 +16,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background:
-          radial-gradient(circle at 20% 10%, rgba(91, 194, 255, 0.05) 0%, transparent 50%),
-          radial-gradient(circle at 80% 90%, rgba(154, 247, 114, 0.05) 0%, transparent 50%);
+  /* Removed background */
   z-index: 0;
 }
 
@@ -150,7 +148,10 @@
 }
 
 .footer-bottom {
-  text-align: center;
+  border-top: 1px solid #fff; /* Line divider - Changed to solid white */
+  padding-top: 1.5rem; /* Space above the line */
+  text-align: start; /* Align text to start */
+  margin: 0 2rem; /* Adjust width - not reach extreme ends */
 }
 
 .copyright {
@@ -158,7 +159,7 @@
   font-size: 0.9rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Align content to start */
   gap: 0.5rem;
 }
 
