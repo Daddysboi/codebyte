@@ -310,6 +310,11 @@ body::-webkit-scrollbar {
   border-top: 1px solid #000000;
 }
 
+[data-theme=light] .social-link {
+  color: #000;
+  background: rgba(0, 0, 0, 0.1);
+}
+
 /* Modern CSS with responsive design */
 /* Header Styles */
 .header {
@@ -478,6 +483,7 @@ body::-webkit-scrollbar {
   padding: 0.5rem;
   border-radius: 4px;
   transition: all 0.3s ease;
+  z-index: 1001;
 }
 
 .menu-toggle:hover {
@@ -622,6 +628,20 @@ body::-webkit-scrollbar {
 
 [data-theme=light] .menu-toggle {
   color: #000;
+}
+
+[data-theme=light] .social-icon {
+  color: #000;
+}
+
+[data-theme=light] .nav {
+  background: rgba(255, 255, 255, 0.98);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+[data-theme=light] .menu-backdrop {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2px);
 }
 
 :root {
@@ -2299,7 +2319,6 @@ body {
 }
 
 .contact-header .role {
-  color: #9AF772;
   font-weight: 500;
 }
 
@@ -2568,6 +2587,11 @@ body {
   color: #000;
 }
 
+[data-theme=light] .social-icons a {
+  color: #000;
+  background: rgba(0, 0, 0, 0.1);
+}
+
 .project-card {
   /* Removed background */
   backdrop-filter: blur(10px);
@@ -2642,7 +2666,6 @@ body {
 .project-title {
   font-size: 1.4rem;
   font-weight: 600;
-  color: #fff;
   margin-bottom: 1rem;
 }
 
@@ -2855,8 +2878,6 @@ body {
 }
 [data-theme=light] .experience-card,
 [data-theme=light] .testimonial-card,
-[data-theme=light] .contact-card,
-[data-theme=light] .project-card,
 [data-theme=light] .profile-card-container {
   background-color: #fff;
   border: 1px solid #ddd;

@@ -3,10 +3,10 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import { Outlet } from "react-router-dom";
 
-const RootLayout = () => {
+const RootLayout = ({ isDarkMode, setIsDarkMode }) => {
   return (
     <div className="main-content-wrapper">
-      <Header />
+      <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Outlet />
       <Footer />
     </div>

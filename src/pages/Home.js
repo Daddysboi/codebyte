@@ -13,7 +13,7 @@ import Testimony from "../components/testimony";
 import Contact from "../components/contact";
 import Loading from "../components/Loading";
 
-function Home() {
+function Home({ isDarkMode }) {
   useEffect(() => {
     Aos.init({
       duration: 2000,
@@ -26,7 +26,7 @@ function Home() {
         <Banner />
         <ProfessionalSummary />
         <Experience />
-        <Projects />
+        <Projects isDarkMode={isDarkMode} />
         <Skillset />
         <Testimony />
         <Contact />

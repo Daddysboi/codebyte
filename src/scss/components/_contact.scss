@@ -60,7 +60,6 @@
 }
 
 .contact-header .role {
-  color: #9AF772;
   font-weight: 500;
 }
 
@@ -339,4 +338,9 @@
 
 [data-theme="light"] .contact-value {
   color: #000;
+}
+
+[data-theme="light"] .social-icons a {
+  color: #000;
+  background: rgba(0, 0, 0, 0.1);
 }

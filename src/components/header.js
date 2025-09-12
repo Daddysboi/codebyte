@@ -14,10 +14,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import logo from "../assets/logo/logo.png";
 
-const Header = () => {
+const Header = ({ isDarkMode, setIsDarkMode }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
-    const [isDarkMode, setIsDarkMode] = useState(true);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -33,8 +32,7 @@ const Header = () => {
     };
 
     const toggleTheme = () => {
-        setIsDarkMode(!isDarkMode);
-        document.documentElement.setAttribute('data-theme', isDarkMode ? 'light' : 'dark');
+        setIsDarkMode(prevMode => !prevMode);
     };
 
     const scrollToSection = (sectionId) => {
