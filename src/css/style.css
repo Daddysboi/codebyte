@@ -316,7 +316,6 @@ body::-webkit-scrollbar {
   max-width: 1400px; /* Limit maximum width */
   margin: 1.5rem auto 0 auto; /* Center horizontally and add top margin */
   z-index: 1000;
-  background: rgba(10, 14, 26, 0.8);
   backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 15px;
@@ -326,7 +325,6 @@ body::-webkit-scrollbar {
 }
 
 .header.scrolled {
-  background: rgba(10, 14, 26, 0.9); /* Slightly more opaque when scrolled */
   backdrop-filter: blur(20px); /* Increased blur when scrolled */
   padding: 0.75rem 0;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4); /* More pronounced shadow when scrolled */
@@ -359,7 +357,7 @@ body::-webkit-scrollbar {
 .logo {
   width: 30px; /* Reduced size */
   height: 30px; /* Reduced size */
-  border-radius: 8px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
@@ -607,7 +605,7 @@ body::-webkit-scrollbar {
 
 body {
   overflow-x: hidden;
-  background: #0a0e1a;
+  background: #03042B;
   color: #fff;
   font-family: "Inter", sans-serif;
 }
@@ -2190,8 +2188,8 @@ body {
 .contact-header .logo {
   width: 60px;
   height: 60px;
+  border-radius: 50%;
   margin-bottom: 1rem;
-  border-radius: 12px;
 }
 
 .contact-header h3 {
@@ -2583,7 +2581,7 @@ body {
   background: rgba(24, 31, 51, 0.5); /* Re-added background */
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.1); /* Re-added border */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Added shadow */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .projects-cta p {

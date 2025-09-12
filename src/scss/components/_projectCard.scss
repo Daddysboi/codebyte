@@ -121,10 +121,10 @@
   text-align: center;
   margin-top: 4rem;
   padding: 3rem;
-  /* Removed background */
+  background: rgba(24, 31, 51, 0.5); /* Re-added background */
   border-radius: 16px;
-  /* Removed border */
-  /* Removed box-shadow */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Re-added border */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .projects-cta p {
