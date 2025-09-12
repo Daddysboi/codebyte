@@ -346,3 +346,10 @@
   color: #000;
   background: transparent;
 }
+
+[data-theme="light"] .banner__header .gradient-text {
+  background: var(--text-gradient-light);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

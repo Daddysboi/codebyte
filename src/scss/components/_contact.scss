@@ -3,7 +3,6 @@
 
 /* Contact Section Styles */
 #contact {
-  
   position: relative;
   overflow: hidden;
 }
@@ -194,7 +193,6 @@
 }
 
 .form-group label {
-  color: #fff;
   font-weight: 600;
   font-size: 0.9rem;
 }
@@ -329,4 +327,16 @@
 .form-group input:focus,
 .form-group textarea:focus {
   transform: translateY(-1px);
+}
+
+[data-theme="light"] .form-group input,
+[data-theme="light"] .social-links h4,
+[data-theme="light"] .contact-header h3,
+[data-theme="light"] .form-group textarea {
+  border-color: rgba(0, 0, 0, 0.2);
+  color: #000;
+}
+
+[data-theme="light"] .contact-value {
+  color: #000;
 }

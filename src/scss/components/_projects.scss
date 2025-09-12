@@ -26,4 +26,26 @@
   margin-top: 4rem;
 }
 
+.projects-cta {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 3rem;
+  background: rgba(24, 31, 51, 0.5);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.projects-cta p {
+  color: #a0a6b6;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+[data-theme="light"] .projects-cta {
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
 

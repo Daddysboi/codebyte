@@ -2,10 +2,10 @@ import React from "react";
 
 const SectionHeader = ({ subheader, header, description, gradient = "blue" }) => {
     const gradientMap = {
-        blue: "linear-gradient(90deg, #EAF7FF, #5BC2FF, #8E6CF9)",
-        green: "linear-gradient(90deg, #C2E8FF, #9AF772)",
-        purple: "linear-gradient(90deg, #EAF7FF, #a076cb, #740463)",
-        pink: "linear-gradient(90deg, #DD5F8C, #7376FF)"
+        blue: "linear-gradient(90deg, #007bff, #0056b3, #003f80)", // Darker blue
+        green: "linear-gradient(90deg, #28a745, #1e7e34)", // Darker green
+        purple: "linear-gradient(90deg, #6f42c1, #563d7c)", // Darker purple
+        pink: "linear-gradient(90deg, #e83e8c, #ad1457)" // Darker pink
     };
 
     const headerStyle = {

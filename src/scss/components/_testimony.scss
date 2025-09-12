@@ -408,16 +408,22 @@
   text-align: center;
   margin-top: 2rem;
   padding: 3rem;
-  /* Removed background */
+  background: rgba(24, 31, 51, 0.5); /* Re-added background */
   border-radius: 16px;
-  /* Removed border */
-  /* Removed box-shadow */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Re-added border */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Added shadow */
 }
 
 .testimonials-cta p {
   color: #a0a6b6;
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
+}
+
+[data-theme="light"] .testimonials-cta {
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Hover effect enhancement */

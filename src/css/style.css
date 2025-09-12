@@ -9,6 +9,7 @@
   --text-gradient: linear-gradient(90deg, #EAF7FF, #5BC2FF, #8E6CF9);
   --card-bg: rgba(24, 31, 51, 0.8);
   --glass-effect: rgba(255, 255, 255, 0.05);
+  --text-gradient-light: linear-gradient(90deg, #000046, #1cb5e0);
 }
 
 * {
@@ -305,6 +306,10 @@ body::-webkit-scrollbar {
     transform: translateY(0);
   }
 }
+[data-theme=light] .footer-bottom {
+  border-top: 1px solid #000000;
+}
+
 /* Modern CSS with responsive design */
 /* Header Styles */
 .header {
@@ -969,6 +974,13 @@ body {
   background: transparent;
 }
 
+[data-theme=light] .banner__header .gradient-text {
+  background: var(--text-gradient-light);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* Professional Summary Section Styles */
 #availability {
   padding: 3rem 0;
@@ -1412,6 +1424,28 @@ body {
   margin-top: 4rem;
 }
 
+.projects-cta {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 3rem;
+  background: rgba(24, 31, 51, 0.5);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.projects-cta p {
+  color: #a0a6b6;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+[data-theme=light] .projects-cta {
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
 /* Skillset Section Styles */
 #skillset {
   position: relative;
@@ -1601,7 +1635,6 @@ body {
 .skill-tag {
   padding: 0.5rem 1rem;
   background: linear-gradient(135deg, rgba(221, 95, 140, 0.15), rgba(115, 118, 255, 0.15));
-  color: #fff;
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 500;
@@ -2117,16 +2150,22 @@ body {
   text-align: center;
   margin-top: 2rem;
   padding: 3rem;
-  /* Removed background */
+  background: rgba(24, 31, 51, 0.5); /* Re-added background */
   border-radius: 16px;
-  /* Removed border */
-  /* Removed box-shadow */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Re-added border */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Added shadow */
 }
 
 .testimonials-cta p {
   color: #a0a6b6;
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
+}
+
+[data-theme=light] .testimonials-cta {
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Hover effect enhancement */
@@ -2393,7 +2432,6 @@ body {
 }
 
 .form-group label {
-  color: #fff;
   font-weight: 600;
   font-size: 0.9rem;
 }
@@ -2516,6 +2554,18 @@ body {
 .form-group input:focus,
 .form-group textarea:focus {
   transform: translateY(-1px);
+}
+
+[data-theme=light] .form-group input,
+[data-theme=light] .social-links h4,
+[data-theme=light] .contact-header h3,
+[data-theme=light] .form-group textarea {
+  border-color: rgba(0, 0, 0, 0.2);
+  color: #000;
+}
+
+[data-theme=light] .contact-value {
+  color: #000;
 }
 
 .project-card {
