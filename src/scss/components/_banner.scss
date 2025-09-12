@@ -36,7 +36,6 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.6rem 1.2rem;
-  border: none;
   border-radius: 50px;
   background: var(--glass-effect);
   backdrop-filter: blur(10px);
@@ -44,7 +43,6 @@
   font-weight: 500;
   margin-bottom: 2rem;
   transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 
   &:hover {
     transform: translateY(-2px);
@@ -264,6 +262,10 @@
 }
 
 @media (max-width: 768px) {
+  #banner {
+    padding: 6rem 0;
+  }
+
   .banner__header {
     font-size: 2.5rem;
   }
@@ -285,6 +287,10 @@
 }
 
 @media (max-width: 480px) {
+  #banner {
+    padding: 4rem 0;
+  }
+
   .banner-content {
     padding: 1rem;
   }
@@ -300,7 +306,10 @@
   .banner__rating {
     flex-direction: column;
     text-align: center;
-    gap: 0.5rem;
+    gap: 1rem;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 15px;
   }
 
   .review__tip {

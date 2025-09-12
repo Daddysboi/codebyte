@@ -357,7 +357,7 @@ body::-webkit-scrollbar {
 .logo {
   width: 30px; /* Reduced size */
   height: 30px; /* Reduced size */
-  border-radius: 50%;
+  border-radius: 8px;
   object-fit: cover;
 }
 
@@ -494,9 +494,10 @@ body::-webkit-scrollbar {
 /* Responsive Design */
 @media (max-width: 968px) {
   .nav {
+    display: flex;
     position: fixed;
     top: 0;
-    right: -300px;
+    right: -100%;
     width: 300px;
     height: 100vh;
     background: rgba(10, 14, 26, 0.98);
@@ -546,7 +547,19 @@ body::-webkit-scrollbar {
   }
   .nav {
     width: 250px;
-    right: -250px;
+  }
+}
+.logo-text-short {
+  display: none;
+}
+
+@media (max-width: 567px) {
+  .logo-text-full {
+    display: none;
+  }
+  .logo-text-short {
+    display: inline;
+    font-size: 1.3rem;
   }
 }
 @media (max-width: 480px) {
@@ -556,8 +569,11 @@ body::-webkit-scrollbar {
   .logo-container {
     gap: 0.5rem;
   }
-  .logo-text {
-    font-size: 1.2rem;
+}
+@media (max-width: 445px) {
+  .logo-text-full,
+  .logo-text-short {
+    display: none;
   }
 }
 /* Animation for header */
@@ -660,7 +676,6 @@ body {
   align-items: center;
   gap: 0.5rem;
   padding: 0.6rem 1.2rem;
-  border: none;
   border-radius: 50px;
   background: var(--glass-effect);
   backdrop-filter: blur(10px);
@@ -668,7 +683,6 @@ body {
   font-weight: 500;
   margin-bottom: 2rem;
   transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .banner__welcome__btn:hover {
   transform: translateY(-2px);
@@ -873,6 +887,9 @@ body {
   }
 }
 @media (max-width: 768px) {
+  #banner {
+    padding: 6rem 0;
+  }
   .banner__header {
     font-size: 2.5rem;
   }
@@ -890,6 +907,9 @@ body {
   }
 }
 @media (max-width: 480px) {
+  #banner {
+    padding: 4rem 0;
+  }
   .banner-content {
     padding: 1rem;
   }
@@ -902,7 +922,10 @@ body {
   .banner__rating {
     flex-direction: column;
     text-align: center;
-    gap: 0.5rem;
+    gap: 1rem;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 15px;
   }
   .review__tip {
     text-align: center;
@@ -2188,8 +2211,8 @@ body {
 .contact-header .logo {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
   margin-bottom: 1rem;
+  border-radius: 12px;
 }
 
 .contact-header h3 {

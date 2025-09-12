@@ -64,7 +64,8 @@ const Header = () => {
                     <Link to="/" className="logo-link">
                         <div className="logo-container">
                             <img src={logo} alt="Temitope Yusuf Logo" className="logo" />
-                            <span className="logo-text">Temitope Yusuf</span>
+                            <span className="logo-text logo-text-full">Temitope Yusuf</span>
+                            <span className="logo-text logo-text-short">Temi</span>
                         </div>
                     </Link>
 
