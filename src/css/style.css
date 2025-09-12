@@ -357,8 +357,8 @@ body::-webkit-scrollbar {
 .logo {
   width: 30px; /* Reduced size */
   height: 30px; /* Reduced size */
-  border-radius: 8px;
   object-fit: cover;
+  border-radius: 50%;
 }
 
 .logo-text {
@@ -2212,7 +2212,7 @@ body {
   width: 60px;
   height: 60px;
   margin-bottom: 1rem;
-  border-radius: 12px;
+  border-radius: 50%;
 }
 
 .contact-header h3 {
