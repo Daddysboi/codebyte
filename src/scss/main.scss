@@ -21,3 +21,31 @@
 .main-content-wrapper {
   padding-top: 10rem;
 }
+
+[data-theme="light"] {
+  body {
+    background-color: #f0f2f5;
+    color: #333;
+  }
+
+  .section-header .subheader {
+    color: #555;
+  }
+
+  .section-header .header {
+    color: #000;
+  }
+
+  .section-header .description {
+    color: #555;
+  }
+
+  .experience-card,
+  .testimonial-card,
+  .contact-card,
+  .project-card,
+  .profile-card-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+}
