@@ -20,7 +20,13 @@ const ProfessionalSummary = () => {
 
             <div className="availability-text">
               <p className="summary-text">
-                Experienced software engineer with a proven track record in designing and implementing scalable enterprise solutions. Adept at mentoring junior developers and fostering a collaborative team environment. Possesses strong coding and testing skills, with a commitment to delivering high-quality applications that improve organizational efficiency and productivity. Holds a BSc in Mathematics and is continuously dedicated to learning and exploring emerging technologies to stay at the forefront of the evolving software development landscape.
+                Experienced software engineer with a proven track record in designing and implementing scalable
+                enterprise solutions.
+                Adept at mentoring junior developers and fostering a collaborative team environment.
+                Possesses strong coding and testing skills, with a commitment to delivering high-quality applications
+                that improve organizational efficiency and productivity.
+                Holds a BSc in Mathematics and is continuously dedicated to learning and exploring emerging technologies
+                to stay at the forefront of the evolving software development landscape.
               </p>
 
               <button
