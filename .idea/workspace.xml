@@ -13,7 +13,6 @@
       <change beforePath="$PROJECT_DIR$/src/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/components/_banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_banner.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_skillset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_skillset.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +115,7 @@
       <workItem from="1757504611040" duration="3845000" />
       <workItem from="1757533160013" duration="6523000" />
       <workItem from="1757541084647" duration="8587000" />
-      <workItem from="1757663027995" duration="3823000" />
+      <workItem from="1757663027995" duration="4164000" />
     </task>
     <servers />
   </component>
