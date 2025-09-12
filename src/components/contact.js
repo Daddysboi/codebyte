@@ -129,7 +129,7 @@ const Contact = () => {
   };
 
   return (
-      <section id="contact" className="section-padding">
+      <section id="contact__form" className="section-padding">
         <div className="container">
           <SectionHeader
               subheader="GET IN TOUCH"

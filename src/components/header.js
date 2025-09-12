@@ -36,9 +36,14 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
     };
 
     const scrollToSection = (sectionId) => {
-        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
-        setIsMenuOpen(false);
-    };
+    const element = document.getElementById(sectionId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+        console.warn(`Element with ID "${sectionId}" not found.`);
+    }
+    setIsMenuOpen(false);
+};
 
     const navItems = [
         { name: "About", id: "availability" },
