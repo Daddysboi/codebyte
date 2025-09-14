@@ -277,10 +277,13 @@
     align-items: center;
   }
 
-  .button-primary, .button-secondary {
+  .button-primary, .button-link-wrapper {
     width: 100%;
     max-width: 300px;
-    justify-content: center;
+  }
+  
+  .button-secondary {
+    width: 100%;
   }
 }
 

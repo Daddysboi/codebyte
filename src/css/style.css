@@ -931,10 +931,12 @@ body {
   .button-container {
     align-items: center;
   }
-  .button-primary, .button-secondary {
+  .button-primary, .button-link-wrapper {
     width: 100%;
     max-width: 300px;
-    justify-content: center;
+  }
+  .button-secondary {
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
@@ -2553,11 +2555,11 @@ body {
   }
   .contact-item {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     gap: 0.5rem;
   }
   .contact-icon {
-    align-self: center;
+    align-self: flex-start;
   }
   .submit-button {
     padding: 1rem 1.5rem;

@@ -303,12 +303,12 @@
 
   .contact-item {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     gap: 0.5rem;
   }
 
   .contact-icon {
-    align-self: center;
+    align-self: flex-start;
   }
 
   .submit-button {
