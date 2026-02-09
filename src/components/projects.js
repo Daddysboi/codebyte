@@ -3,11 +3,11 @@ import SectionHeader from "./SectionHeader";
 import ProjectCard from "./ProjectCard";
 
 import settL from "../assets/images/SettL.png";
-import bloom from "../assets/images/bloom.png";
+import southward from "../assets/images/southward.png";
 import DAce from "../assets/images/DAce.png";
 
 import settLLight from "../assets/images/SettL-light.png";
-import bloomLight from "../assets/images/bloom-light.png";
+import southwardLight from "../assets/images/southward-light.png";
 import DAceLight from "../assets/images/DAce-light.png";
 
 const Projects = ({ isDarkMode }) => {
@@ -37,20 +37,20 @@ const Projects = ({ isDarkMode }) => {
                 {key: "Forms", value: ["Formik"]},
                 {key: "CSS", value: ["Styled Components"]},
             ],
-            text: "SettL is a payment platform and an escrow agent, which is a neutral third party responsible for holding and regulating funds involved in a transaction between a buyer and a seller. It's role is to ensure that both parties fulfill their obligations before releasing the funds.",
+            text: "SettL is an escrow agent, which is responsible for holding and regulating funds involved in a transaction between 2 or more parties. .",
         },
         {
-            img: isDarkMode ? bloom : bloomLight,
-            href: "https://bloom-staging.vercel.app/",
-            name: "Bloom",
+            img: isDarkMode ? southward : southwardLight,
+            href: "https://https://southward-frontend.vercel.app/",
+            name: "Southward Hospital",
             tools: [
                 {key: "Frontend", value: ["Next"]},
-                {key: "Backend", value: [" "]},
-                {key: "State Management", value: [""]},
-                {key: "Forms", value: [""]},
-                {key: "CSS", value: ["Styled Components"]},
+                {key: "Backend", value: ["Node", "Express"]},
+                {key: "State Management", value: ["Redux", "Context API"]},
+                {key: "Forms", value: ["Yup", "Formik"]},
+                {key: "CSS", value: ["Tailwind"]},
             ],
-            text: "With Bloom, you can rent now and pay later. Our innovative platform offers flexible payment options that cater to your financial needs. Say goodbye to the stress of upfront rent payments and hello to a more convenient renting experience. Try bloom today and grow your finance",
+            text: "Experience the future of healthcare with your health in focus",
         }
     ];
 
